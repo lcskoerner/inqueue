@@ -7,7 +7,6 @@ class CreatePlaces < ActiveRecord::Migration[6.0]
       t.float :longitude
       t.integer :rating
       t.string :google_place_id
-
       t.timestamps
     end
   end

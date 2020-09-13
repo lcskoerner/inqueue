@@ -5,7 +5,6 @@ class CreateLines < ActiveRecord::Migration[6.0]
       t.date :end_time
       t.date :date
       t.references :places, null: false, foreign_key: true
-
       t.timestamps
     end
   end
