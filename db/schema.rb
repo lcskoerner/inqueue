@@ -10,29 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_12_195133) do
+ActiveRecord::Schema.define(version: 2020_09_13_152346) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "lines", force: :cascade do |t|
-    t.integer "start_time"
-    t.integer "end_time"
-    t.integer "date"
     t.bigint "places_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.date "date"
+    t.date "start_time"
+    t.date "end_time"
     t.index ["places_id"], name: "index_lines_on_places_id"
   end
 
   create_table "places", force: :cascade do |t|
     t.text "address"
     t.string "name"
-    t.integer "latitude"
-    t.integer "longitutude"
     t.integer "rating"
     t.string "google_place_id"
-    t.string "photo_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
