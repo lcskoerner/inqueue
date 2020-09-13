@@ -16,9 +16,9 @@ ActiveRecord::Schema.define(version: 2020_09_12_195133) do
   enable_extension "plpgsql"
 
   create_table "lines", force: :cascade do |t|
-    t.integer "start_time"
-    t.integer "end_time"
-    t.integer "date"
+    t.date "start_time"
+    t.date "end_time"
+    t.date "date"
     t.bigint "places_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -28,11 +28,10 @@ ActiveRecord::Schema.define(version: 2020_09_12_195133) do
   create_table "places", force: :cascade do |t|
     t.text "address"
     t.string "name"
-    t.integer "latitude"
-    t.integer "longitutude"
+    t.float "latitude"
+    t.float "longitude"
     t.integer "rating"
     t.string "google_place_id"
-    t.string "photo_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
