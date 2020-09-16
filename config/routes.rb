@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  devise_for :users
   root to: 'pages#home'
   get "places/search", to: "places#search", as: :places_search
 

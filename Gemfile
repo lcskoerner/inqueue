@@ -27,11 +27,12 @@ gem 'dotenv-rails', groups: [:development, :test]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
-
 gem 'devise'
 gem 'pg_search', '~> 2.3.0'
 gem 'geocoder'
-
+gem 'faraday'
+gem 'turbolinks_render'
+gem 'rack-cors'
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
 gem 'simple_form'
