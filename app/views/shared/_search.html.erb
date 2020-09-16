@@ -1,15 +1,4 @@
-<!--
-<div class="container mb-3">
-  <%= form_tag("/places/search", method: :get, remote: true) do %>
-    <div class="d-flex">
-      <%= text_field_tag :query, params[:query], class: "form-control" %>
-      <%= button_tag(type: "submit", class: "btn btn-primary") do %>
-        <i class="ni ni-send"></i>
-      <% end %>
-    </div>
-  <% end %>
-</div>
--->
+<%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?libraries=places&key=#{ENV['GOOGLE_API_KEY']}" %>
 
 <div class="container mb-3">
     <div class="d-flex">
