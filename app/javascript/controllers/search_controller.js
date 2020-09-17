@@ -1,4 +1,5 @@
 import { Controller } from "stimulus"
+import { fetchWithToken } from "../utils/fetch_with_token"
 
 export default class extends Controller {
   static targets = ['keyword', 'places'];
@@ -7,24 +8,61 @@ export default class extends Controller {
     this.initAutoComplete();
   }
 
+  search2() {
+    const options = {
+      enableHighAccuracy: true,
+      timeout: 50000,
+      maximumAge: 0,
+    };
+
+    navigator.geolocation.getCurrentPosition((position) => {
+        const lat = position.coords.latitude;
+        const lng = position.coords.longitude;
+        const keyword = this.keywordTarget.value;
+        const url = `/places/search?query=${keyword}&location=${lat},${lng}`;
+        console.log(url);
+        fetch(url)
+          .then((response) => response.json())
+          .then((data) => {
+             this.placesTarget.innerText = "";
+             data.forEach((result) => {
+               const place = `{<br> name: ${result["name"]},<br>address: ${result["formatted_address"]},<br>google_place_id: ${result["place_id"]}<br>},<br>`;
+               this.placesTarget.insertAdjacentHTML("beforeend", place);
+             });
+          });
+      },
+      (err) => console.warn(`ERROR(${err.code}): ${err.message}`),
+      options);
+  }
+
   search() {
-    const keyword = this.keywordTarget.value;
-    const key = process.env.GOOGLE_API_KEY;
-    const url = `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/textsearch/json?query=${keyword}&key=${key}`;
-    fetch(url)
-      .then(response => response.json())
-      .then((data) => {
-        this.placesTarget.innerText = '';
-        data.results.forEach((result) => {
-          const place = `{ name: ${result['name']}, address: ${result['formatted_address']} }<br>`;
-          this.placesTarget.insertAdjacentHTML("beforeend", place);
-        });
-      })
-      .catch(() => console.log("Can’t access " + url + " response. Blocked by browser?"));
+    const options = {
+      enableHighAccuracy: true,
+      timeout: 50000,
+      maximumAge: 0
+    };
+
+    navigator.geolocation.getCurrentPosition((position) => {
+      const lat = position.coords.latitude;
+      const lng = position.coords.longitude;
+      const keyword = this.keywordTarget.value;
+      const api_key = process.env.GOOGLE_API_KEY;
+      const url = `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/textsearch/json?query=${keyword}&location=${lat},${lng}&key=${api_key}`;
+      fetch(url)
+        .then((response) => response.json())
+        .then((data) => {
+          this.placesTarget.innerText = "";
+          data.results.forEach((result) => {
+            const place = `{ name: ${result["name"]}, address: ${result["formatted_address"]} }<br>`;
+            this.placesTarget.insertAdjacentHTML("beforeend", place);
+          });
+        })
+    }, (err) => {
+      console.warn(`ERROR(${err.code}): ${err.message}`);
+    }, options);
   }
 
   initAutoComplete() {
-    console.log(this.keywordTarget);
     const autocomplete = new google.maps.places.Autocomplete(
       this.keywordTarget
     );
