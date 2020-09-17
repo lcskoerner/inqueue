@@ -25,7 +25,15 @@ export default class extends Controller {
           .then((data) => {
              this.placesTarget.innerText = "";
              data.forEach((result) => {
-               const link = `<a href="${result['google_place_id']}/lines">Create a line</a>`;
+               const link = `
+                <form method="post" action="/places" class="inline">
+                  <input type="hidden" name="google_place_id" value="result['google_place_id']">
+                  <button type="submit" name="submit_param" value="submit_value" class="link-button">
+                    Create a line
+                  </button>
+                </form>
+               `;
+              //  const link = `<a href="${result['google_place_id']}/lines">Create a line</a>`;
                const place = `
                   {
                     <br>name: ${result["name"]},

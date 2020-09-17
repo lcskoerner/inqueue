@@ -3,6 +3,9 @@ class PlacesController < ApplicationController
     @places = Place.all
   end
 
+  def create
+  end
+
   # GET "/places/search", to: places#search
   def search
     keyword = params[:query]
@@ -23,7 +26,6 @@ class PlacesController < ApplicationController
           rating: result['rating'],
           google_place_id: result['place_id']
         )
-        place.save!
         @places << place
       end
       render json: @places.map(&:attributes)
