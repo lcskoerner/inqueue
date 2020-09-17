@@ -23,6 +23,7 @@ class PlacesController < ApplicationController
           rating: result['rating'],
           google_place_id: result['place_id']
         )
+        place.save!
         @places << place
       end
       render json: @places.map(&:attributes)

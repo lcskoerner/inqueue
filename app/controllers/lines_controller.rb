@@ -1,10 +1,9 @@
 class LinesController < ApplicationController
   def create
     @place = Place.find_by google_place_id: params[:google_place_id]
-    # @place = Place.where(google_place_id: params[:google_place_id])
     @place.save!
     @line = Line.new(
-      start_time: Time.now,
+      start_date: Time.now,
       date: Date.today,
     )
     @line.place = @place
