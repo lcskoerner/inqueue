@@ -26,7 +26,7 @@ export default class extends Controller {
           .then((data) => {
              this.placesTarget.innerText = "";
              data.forEach((result) => {
-               const place = `{<br> name: ${result["name"]},<br>address: ${result["formatted_address"]},<br>google_place_id: ${result["place_id"]}<br>},<br>`;
+               const place = `{<br> name: ${result["name"]},<br>address: ${result["address"]},<br>google_place_id: ${result["google_place_id"]}<br>},<br>`;
                this.placesTarget.insertAdjacentHTML("beforeend", place);
              });
           });
