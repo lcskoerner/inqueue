@@ -20,13 +20,22 @@ export default class extends Controller {
         const lng = position.coords.longitude;
         const keyword = this.keywordTarget.value;
         const url = `/places/search?query=${keyword}&location=${lat},${lng}`;
-        console.log(url);
         fetch(url)
           .then((response) => response.json())
           .then((data) => {
              this.placesTarget.innerText = "";
              data.forEach((result) => {
-               const place = `{<br> name: ${result["name"]},<br>address: ${result["address"]},<br>google_place_id: ${result["google_place_id"]}<br>},<br>`;
+               const link = `<a href="${result['google_place_id']}/lines">Create a line</a>`;
+               const place = `
+                  {
+                    <br>name: ${result["name"]},
+                    <br>address: ${result["address"]},
+                    <br>google_place_id: ${result["google_place_id"]}
+                    <br>
+                  },
+                  <br>
+                `;
+               this.placesTarget.insertAdjacentHTML("beforeend", link);
                this.placesTarget.insertAdjacentHTML("beforeend", place);
              });
           });
