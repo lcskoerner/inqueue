@@ -1,15 +1,17 @@
 class LinesController < ApplicationController
+  def new
+  end
+
   def create
-    @place = Place.find_by google_place_id: params[:google_place_id]
-    @place.save!
-    @line = Line.new(
-      start_date: Time.now,
-      date: Date.today,
-    )
+    @place = Place.find(params[:place_id])
+    @line = Line.new
+    @line.start_date = Time.now
     @line.place = @place
     @line.save!
     puts @place.attributes
     puts @line.attributes
+    flash[:notice] = "line started"
+    redirect_to place_path(@place)
   end
 
   #END LINE (update)

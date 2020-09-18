@@ -1,8 +1,4 @@
 class PlacesController < ApplicationController
-  def index
-    @places = Place.all
-  end
-
   def create
     google_place_id = params[:place][:google_place_id]
     fields = 'name,formatted_address,geometry,place_id'
@@ -17,14 +13,10 @@ class PlacesController < ApplicationController
       @place.longitude = place['geometry']['location']['lng']
       @place.rating = place['rating']
       @place.save!
-    else
     end
-    flash[:notice] = "place saved"
-    render "places/search"
+    redirect_to place_path(@place)
   end
 
-
-  # GET "/places/search", to: places#search
   def results
     keyword = place_params[:query]
     location = place_params[:location]
@@ -54,9 +46,14 @@ class PlacesController < ApplicationController
   def search
   end
 
+  def update
+    create
+  end
+
   # GET "/places/:id" , to: places#show
   def show
     @place = Place.find(params[:id])
+    @line = Line.new
   end
 
   private
