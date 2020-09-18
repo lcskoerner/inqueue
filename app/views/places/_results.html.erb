@@ -1,7 +1,7 @@
 <% places.each do |place| %>
   <%= simple_form_for(place) do |f| %>
-    <%= f.text_field :google_place_id %>
-    <%= f.button :submit %>
+    <%= f.text_field :google_place_id, type: "hidden" %>
+    <%= f.button :submit, "Start a line", class: "btn btn-link btn-sm" %>
   <% end %>
   {<br>
     name: <%= place['name'] %>,<br>

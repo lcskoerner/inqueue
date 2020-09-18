@@ -35,15 +35,15 @@ class PlacesController < ApplicationController
       url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?'
       resp = Faraday.get(url, {query: keyword, location: location, key: ENV['GOOGLE_API_KEY']}, {'Accept' => 'application/json'})
       results = JSON.parse(resp.body)['results']
-      results.each do |result|
-        place = Place.new(
-          name: result['name'],
-          address: result['formatted_address'],
-          latitude: result['geometry']['location']['lat'],
-          longitude: result['geometry']['location']['lng'],
-          rating: result['rating'],
-          google_place_id: result['place_id']
-        )
+      results.each do |res|
+        place = Place.find_or_initialize_by(google_place_id: res['place_id'])
+        if place.new_record?
+          place.name = res['name']
+          place.address = res['formatted_address']
+          place.latitude = res['geometry']['location']['lat']
+          place.longitude = res['geometry']['location']['lng']
+          place.rating = res['rating']
+        end
         @places << place
       end
     end
