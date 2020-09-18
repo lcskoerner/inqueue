@@ -18,37 +18,16 @@ export default class extends Controller {
       });
   }
 
-  search2() {
-    const options = {
-      enableHighAccuracy: true,
-      timeout: 50000,
-      maximumAge: 0
-    };
-
-    navigator.geolocation.getCurrentPosition((position) => {
-      const lat = position.coords.latitude;
-      const lng = position.coords.longitude;
-      const keyword = this.keywordTarget.value;
-      const api_key = process.env.GOOGLE_API_KEY;
-      const url = `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/textsearch/json?query=${keyword}&location=${lat},${lng}&key=${api_key}`;
-      fetch(url)
-        .then((response) => response.json())
-        .then((data) => {
-          this.placesTarget.innerText = "";
-          data.results.forEach((result) => {
-            const place = `{ name: ${result["name"]}, address: ${result["formatted_address"]} }<br>`;
-            this.placesTarget.insertAdjacentHTML("beforeend", place);
-          });
-        })
-    }, (err) => {
-      console.warn(`ERROR(${err.code}): ${err.message}`);
-    }, options);
-  }
-
   initAutoComplete() {
     const autocomplete = new google.maps.places.Autocomplete(
       this.keywordTarget
     );
+
+    const options = {
+      enableHighAccuracy: true,
+      // timeout: 5000,
+      maximumAge: 0,
+    };
 
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(position => {
@@ -57,12 +36,14 @@ export default class extends Controller {
           lng: position.coords.longitude
         };
         this.userCoordinates = geolocation;
+        console.log(this.userCoordinates);
         const circle = new google.maps.Circle({
           center: geolocation,
           radius: position.coords.accuracy
         });
         autocomplete.setBounds(circle.getBounds());
-      });
+      }, (err) => console.log(err),
+      options);
     }
 
     google.maps.event.addDomListener(this.keywordTarget, 'keydown', function (e) {

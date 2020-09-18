@@ -4,7 +4,25 @@ class PlacesController < ApplicationController
   end
 
   def create
+    google_place_id = params[:place][:google_place_id]
+    fields = 'name,formatted_address,geometry,place_id'
+    url = 'https://maps.googleapis.com/maps/api/place/details/json?'
+    resp = Faraday.get(url, { place_id: google_place_id, fields: fields, key: ENV['GOOGLE_API_KEY'] }, {'Accept' => 'application/json'})
+    place = JSON.parse(resp.body)['result']
+    @place = Place.find_or_initialize_by(google_place_id: place['place_id'])
+    if @place.new_record?
+      @place.name = place['name']
+      @place.address = place['formatted_address']
+      @place.latitude = place['geometry']['location']['lat']
+      @place.longitude = place['geometry']['location']['lng']
+      @place.rating = place['rating']
+      @place.save!
+    else
+    end
+    flash[:notice] = "place saved"
+    render "places/search"
   end
+
 
   # GET "/places/search", to: places#search
   def results

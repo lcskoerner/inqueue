@@ -1,4 +1,14 @@
-<p>Search results:</p>
 <% places.each do |place| %>
-  <p><%= place['name'] %></p>
+  <%= simple_form_for(place) do |f| %>
+    <%= f.text_field :google_place_id %>
+    <%= f.button :submit %>
+  <% end %>
+  {<br>
+    name: <%= place['name'] %>,<br>
+    address: <%= place['address'] %>,<br>
+    latitude: <%= place['latitude'] %>,<br>
+    longitude: <%= place['longitude'] %>,<br>
+    rating: <%= place['rating'] %>,<br>
+    google_place_id: <%= place['google_place_id'] %><br>
+  },<br>
 <% end %>
