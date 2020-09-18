@@ -7,9 +7,9 @@ class PlacesController < ApplicationController
   end
 
   # GET "/places/search", to: places#search
-  def search
-    keyword = params[:query]
-    location = params[:location]
+  def results
+    keyword = place_params[:query]
+    location = place_params[:location]
 
     @places = []
 
@@ -28,12 +28,23 @@ class PlacesController < ApplicationController
         )
         @places << place
       end
-      render json: @places.map(&:attributes)
     end
+    html = render_to_string(partial: "places/results", locals:  { places: @places })
+    render json: { results_html: html }
+  end
+
+  def search
   end
 
   # GET "/places/:id" , to: places#show
   def show
     @place = Place.find(params[:id])
   end
+
+  private
+
+  def place_params
+    params.permit(:query, :location)
+  end
+
 end

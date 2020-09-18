@@ -4,9 +4,10 @@
     <div class="d-flex">
       <%= text_field_tag :query, params[:query], data: { target: 'search.keyword' }, class: "form-control" %>
       <%= button_tag(type: "submit", class: "btn btn-primary",
-        data: { action: 'click->search#search2' }) do %>
+        data: { action: 'click->search#search' }) do %>
         <i class="ni ni-send"></i>
       <% end %>
+
     </div>
 </div>
 

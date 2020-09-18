@@ -8,51 +8,17 @@ export default class extends Controller {
     this.initAutoComplete();
   }
 
-  search2() {
-    const options = {
-      enableHighAccuracy: true,
-      timeout: 50000,
-      maximumAge: 0,
-    };
-
-    navigator.geolocation.getCurrentPosition((position) => {
-        const lat = position.coords.latitude;
-        const lng = position.coords.longitude;
-        const keyword = this.keywordTarget.value;
-        const url = `/places/search?query=${keyword}&location=${lat},${lng}`;
-        fetch(url)
-          .then((response) => response.json())
-          .then((data) => {
-             this.placesTarget.innerText = "";
-             data.forEach((result) => {
-               const link = `
-                <form method="post" action="/places" class="inline">
-                  <input type="hidden" name="google_place_id" value="result['google_place_id']">
-                  <button type="submit" name="submit_param" value="submit_value" class="link-button">
-                    Create a line
-                  </button>
-                </form>
-               `;
-              //  const link = `<a href="${result['google_place_id']}/lines">Create a line</a>`;
-               const place = `
-                  {
-                    <br>name: ${result["name"]},
-                    <br>address: ${result["address"]},
-                    <br>google_place_id: ${result["google_place_id"]}
-                    <br>
-                  },
-                  <br>
-                `;
-               this.placesTarget.insertAdjacentHTML("beforeend", link);
-               this.placesTarget.insertAdjacentHTML("beforeend", place);
-             });
-          });
-      },
-      (err) => console.warn(`ERROR(${err.code}): ${err.message}`),
-      options);
+  search() {
+    const keyword = this.keywordTarget.value;
+    const url = `/places/results?query=${keyword}&location=${this.userCoordinates.lat},${this.userCoordinates.lng}`;
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+          this.placesTarget.innerHTML = data.results_html;
+      });
   }
 
-  search() {
+  search2() {
     const options = {
       enableHighAccuracy: true,
       timeout: 50000,
@@ -90,6 +56,7 @@ export default class extends Controller {
           lat: position.coords.latitude,
           lng: position.coords.longitude
         };
+        this.userCoordinates = geolocation;
         const circle = new google.maps.Circle({
           center: geolocation,
           radius: position.coords.accuracy
