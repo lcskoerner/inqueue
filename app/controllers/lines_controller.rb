@@ -6,10 +6,9 @@ class LinesController < ApplicationController
     @place = Place.find(params[:place_id])
     @line = Line.new
     @line.start_date = DateTime.now
+    @line.active = true
     @line.place = @place
     @line.save!
-    puts @place.attributes
-    puts @line.attributes
     flash[:notice] = "line started"
     redirect_to place_path(@place)
   end
@@ -17,6 +16,12 @@ class LinesController < ApplicationController
   #END LINE (update)
   #PATCH "/lines/:id/" , to: lines#update
   def update
+    @place = Place.find(params[:place_id])
+    @line = Line.find(params[:id])
+    @line.end_date = DateTime.now
+    @line.active = false
+    @line.save!
+    redirect_to place_path(@place)
   end
 
   #START LINE (create and show)

@@ -1,11 +1,18 @@
  <div class="container">
-  <%= simple_form_for([@place, @line]) do |f| %>
-    <%= f.text_field :start_date, type: "hidden" %>
-    <%= f.button :submit, "Start line", class: "btn btn-link btn-sm" %>
+  <% if @place.lines.empty? || !@place.lines.last.active? %>
+    <%= simple_form_for([@place, @line]) do |f| %>
+      <%= f.text_field :start_date, type: "hidden" %>
+      <%= f.button :submit, "Start line", class: "btn btn-link btn-sm" %>
+    <% end %>
+  <% else %>
+    <%= simple_form_for([@place, @place.lines.last]) do |f| %>
+      <%= f.text_field :start_date, type: "hidden" %>
+      <%= f.button :submit, "End line", class: "btn btn-link btn-sm" %>
+    <% end %>
+    <%= @place.lines.last.start_date %>
   <% end %>
-  <% @place.lines.each do |line| %>
-    <%= line.start_date %><br>
-  <% end  %>
+
+<br>
   {<br>
       name: <%= @place['name'] %>,<br>
       address: <%= @place['address'] %>,<br>

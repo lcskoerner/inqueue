@@ -40,6 +40,7 @@ module Inqueue
     #     resource '*', :headers => :any, :methods => [:get, :post, :options]
     #   end
     # end
+    config.time_zone = "Eastern Time (US & Canada)"
 
     # Don't generate system test files.
     config.generators.system_tests = nil
