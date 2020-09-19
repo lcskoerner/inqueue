@@ -4,7 +4,7 @@
     <%= f.button :submit, "Start line", class: "btn btn-link btn-sm" %>
   <% end %>
   <% @place.lines.each do |line| %>
-    <%= line %><br>
+    <%= line.start_date %><br>
   <% end  %>
   {<br>
       name: <%= @place['name'] %>,<br>

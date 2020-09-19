@@ -5,7 +5,7 @@ class LinesController < ApplicationController
   def create
     @place = Place.find(params[:place_id])
     @line = Line.new
-    @line.start_date = Time.now
+    @line.start_date = DateTime.now
     @line.place = @place
     @line.save!
     puts @place.attributes

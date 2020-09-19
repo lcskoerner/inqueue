@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_17_050243) do
+ActiveRecord::Schema.define(version: 2020_09_19_151359) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "lines", force: :cascade do |t|
-    t.date "start_date"
-    t.date "end_date"
+    t.datetime "start_date"
+    t.datetime "end_date"
     t.date "date"
     t.bigint "place_id", null: false
     t.index ["place_id"], name: "index_lines_on_place_id"
