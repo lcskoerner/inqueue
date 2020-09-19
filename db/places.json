@@ -1,0 +1,669 @@
+{
+  "html_attributions": [],
+  "results": [
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "1500 McGill College Ave, Montreal, Quebec H3A 3J5, Canada",
+      "geometry": {
+        "location": {
+          "lat": 45.5018335,
+          "lng": -73.5716686
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.50308642989273,
+            "lng": -73.57019747010727
+          },
+          "southwest": {
+            "lat": 45.50038677010728,
+            "lng": -73.57289712989272
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "name": "Winners",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 2988,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111816577301356152060\">Daniel Montpetit</a>"
+          ],
+          "photo_reference": "CmRaAAAAW3GBoKjul7SqXfIFSaHzY6LPhTqbf8kvvclF2LLROw_5r3JncLkBQkwow6EjvLNS8L0PJxZYQXTnKAL_QXckylKV2i1nq9Zzsv3woCNNxQ9mpSCci1vBKOLW8S8LIj9wEhADAG0ypvgKCh6DatgTzjPYGhRhRGH7cxwu_gouc6oMJwADIDgf-w",
+          "width": 5312
+        }
+      ],
+      "place_id": "ChIJoYYaHUQayUwRbtZYrxN2OUw",
+      "plus_code": {
+        "compound_code": "GC2H+P8 Montreal, Quebec",
+        "global_code": "87Q8GC2H+P8"
+      },
+      "rating": 4.1,
+      "reference": "ChIJoYYaHUQayUwRbtZYrxN2OUw",
+      "types": [
+        "department_store",
+        "shoe_store",
+        "point_of_interest",
+        "clothing_store",
+        "store",
+        "establishment"
+      ],
+      "user_ratings_total": 1664
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "1500 Atwater Ave, Montreal, Quebec H3Z 3B8, Canada",
+      "geometry": {
+        "location": {
+          "lat": 45.488643,
+          "lng": -73.58623229999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.49004057989272,
+            "lng": -73.58482637010728
+          },
+          "southwest": {
+            "lat": 45.48734092010727,
+            "lng": -73.58752602989273
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "name": "Winners",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 2988,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100328502937428467376\">Sina A</a>"
+          ],
+          "photo_reference": "CmRaAAAAdWt89LtEJ-1J7gJlzJZ01y-M7bWHMt6RQMeKa4Y9-eulSOJE8bXu1ID4u_SF1f8v2sbqu6JFEc16U-diThH_NMX3MSyHd8vNJv3K2ZNzHWByYCo2MP-EQobfH7-k9bA_EhBh6jZ5Q4fNrCOSRECtyt9MGhRykPjhczM_jz-CZ7JMD0qHgNl2dA",
+          "width": 5312
+        }
+      ],
+      "place_id": "ChIJh73oYG0ayUwR1o7Y-Hr4vC8",
+      "plus_code": {
+        "compound_code": "FCQ7+FG Montreal, Quebec",
+        "global_code": "87Q8FCQ7+FG"
+      },
+      "rating": 4.2,
+      "reference": "ChIJh73oYG0ayUwR1o7Y-Hr4vC8",
+      "types": [
+        "department_store",
+        "shoe_store",
+        "point_of_interest",
+        "clothing_store",
+        "store",
+        "establishment"
+      ],
+      "user_ratings_total": 1033
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "225 Peel St, Montreal, Quebec H3C 2G6, Canada",
+      "geometry": {
+        "location": {
+          "lat": 45.4937852,
+          "lng": -73.5583568
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.49507332989273,
+            "lng": -73.55705587010728
+          },
+          "southwest": {
+            "lat": 45.49237367010728,
+            "lng": -73.55975552989271
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "name": "Winners",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 2340,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104747999224182617169\">Alain Tramblay</a>"
+          ],
+          "photo_reference": "CmRaAAAAtR2Sphp9F43cACepIGJZmCGp9VpilyPPWbCMz-FZyfzhtkVWKZnsNH2x5i7qnglPSwQXb592FRFE0j6G2Yt-VL5ozgaJ8xISZzfBeKd84ZTteTEB_ROKmtci2oOl5ZiAEhBBdUCbpkWPn2hqRTJtyo0BGhTlG7rgoI6yI9jC81AVU-3JxTbj8A",
+          "width": 4160
+        }
+      ],
+      "place_id": "ChIJ2SqfEmAayUwROQ3L0osjeHc",
+      "plus_code": {
+        "compound_code": "FCVR+GM Montreal, Quebec",
+        "global_code": "87Q8FCVR+GM"
+      },
+      "rating": 4.1,
+      "reference": "ChIJ2SqfEmAayUwROQ3L0osjeHc",
+      "types": [
+        "department_store",
+        "shoe_store",
+        "point_of_interest",
+        "clothing_store",
+        "store",
+        "establishment"
+      ],
+      "user_ratings_total": 439
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "150 Saint-Catherine St W, Montreal, Quebec H2X 3Y2, Canada",
+      "geometry": {
+        "location": {
+          "lat": 45.5081741,
+          "lng": -73.5640056
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.50974182989272,
+            "lng": -73.56303132010729
+          },
+          "southwest": {
+            "lat": 45.50704217010728,
+            "lng": -73.56573097989273
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "name": "Winners",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 3264,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109537359070841600424\">A Google User</a>"
+          ],
+          "photo_reference": "CmRaAAAA69vtcXmSJnZzMOR7EClW5zLg5pOJpmBaoScrxVFp_fQUTJ1tuKXaf67hsQ8HR3C50JCnHmJXJ92IE0iY58pGUcsmcYUPFYK76FN13qeY_JE7f4hxlMEYafOg8vFiUoR-EhA7-tVxhWIxTr_5dwl-o6_QGhTBUzTUWItyLdhyXX3PZAGc4DJTbA",
+          "width": 2448
+        }
+      ],
+      "place_id": "ChIJ48U7S04ayUwRs4OzEc_JYjU",
+      "plus_code": {
+        "compound_code": "GC5P+79 Montreal, Quebec",
+        "global_code": "87Q8GC5P+79"
+      },
+      "rating": 4,
+      "reference": "ChIJ48U7S04ayUwRs4OzEc_JYjU",
+      "types": [
+        "department_store",
+        "shoe_store",
+        "point_of_interest",
+        "clothing_store",
+        "store",
+        "establishment"
+      ],
+      "user_ratings_total": 771
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "815 Rue Chabanel O, Montréal, QC H4N 1J8, Canada",
+      "geometry": {
+        "location": {
+          "lat": 45.5358065,
+          "lng": -73.6570215
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.53699177989273,
+            "lng": -73.65554792010728
+          },
+          "southwest": {
+            "lat": 45.53429212010728,
+            "lng": -73.65824757989273
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "name": "Winners",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104129093714853390004\">Ionut Baban</a>"
+          ],
+          "photo_reference": "CmRaAAAAPQXC8htgFQHVZTiDLQzhGbduXLL__1wE3LPF1uo89bvbMWruKSVwhOsgIlyI1IoghppV9SfzYy4sryIi_0X2KaN6aVjVUMQg97Pbr_V7Mfcs0qnR7ZfFY5bir7kiwRkIEhB-GznocI6rP5WdSpX45dTpGhRRZTJD80epyMwom3WW9rp6_aE8_A",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJz30Z5vAYyUwRDOcw50qpf6M",
+      "plus_code": {
+        "compound_code": "G8PV+85 Montreal, Quebec",
+        "global_code": "87Q8G8PV+85"
+      },
+      "rating": 4.1,
+      "reference": "ChIJz30Z5vAYyUwRDOcw50qpf6M",
+      "types": [
+        "department_store",
+        "shoe_store",
+        "point_of_interest",
+        "clothing_store",
+        "store",
+        "establishment"
+      ],
+      "user_ratings_total": 955
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "4375 Jean Talon Estates, Montreal, Quebec H1S 1J9, Canada",
+      "geometry": {
+        "location": {
+          "lat": 45.5705029,
+          "lng": -73.5901564
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.57172137989272,
+            "lng": -73.58853002010729
+          },
+          "southwest": {
+            "lat": 45.56902172010728,
+            "lng": -73.59122967989272
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "name": "Winners",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103283833543895997855\">fatih anderoglu</a>"
+          ],
+          "photo_reference": "CmRaAAAAwp7COWeYkb2tNvz-DbWd2UemYmLLB86xUdR9nSUoh6UpUnnUQGssiyuLsKMuZ79aO5poqq6BH4-4BRAk2vCJGbryy0KfQuQl_F6tzkQ-ZRElf2ACkgbIBg3jMptLy1o1EhAf37KJXfkNFgV2VA1GlDz2GhRqTHuPkgkaCrx7jbtZZP8wFiJW2g",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJQYI9FLkeyUwRel2GbnPbPqI",
+      "plus_code": {
+        "compound_code": "HCC5+6W Montreal, Quebec",
+        "global_code": "87Q8HCC5+6W"
+      },
+      "rating": 4.1,
+      "reference": "ChIJQYI9FLkeyUwRel2GbnPbPqI",
+      "types": [
+        "department_store",
+        "shoe_store",
+        "point_of_interest",
+        "clothing_store",
+        "store",
+        "establishment"
+      ],
+      "user_ratings_total": 593
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "6900 Decarie Blvd Ste 1400, Côte Saint-Luc, Quebec H3X 2T8, Canada",
+      "geometry": {
+        "location": {
+          "lat": 45.490945,
+          "lng": -73.65075399999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.49265062989272,
+            "lng": -73.64900717010728
+          },
+          "southwest": {
+            "lat": 45.48995097010727,
+            "lng": -73.65170682989272
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "name": "Winners",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 2448,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117659783931997793562\">Animesh Ghose</a>"
+          ],
+          "photo_reference": "CmRaAAAAtCx1t1RGvWtQA1HEn2kbP_jpOcAN1XZizw7b7lQPkOaw7eOH9uIn-elKsYKyNyR6B9MACKiohno6yBPQ1IpHCRxPL88umUkHGwq9py_t_LepdlozNd3i65TZJEu3GkEDEhAulyxYhhorWMz8cS0zQDyuGhRk69bQxVbJ64o_HfIFLV6QWNVbCw",
+          "width": 3264
+        }
+      ],
+      "place_id": "ChIJ5x1iDtkZyUwR78odsNEC2JU",
+      "plus_code": {
+        "compound_code": "F8RX+9M Côte Saint-Luc, Quebec",
+        "global_code": "87Q8F8RX+9M"
+      },
+      "rating": 4.1,
+      "reference": "ChIJ5x1iDtkZyUwR78odsNEC2JU",
+      "types": [
+        "department_store",
+        "shoe_store",
+        "point_of_interest",
+        "clothing_store",
+        "store",
+        "establishment"
+      ],
+      "user_ratings_total": 512
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "6136 Boul Henri-Bourassa E, Montréal, QC H1G 5X3, Canada",
+      "geometry": {
+        "location": {
+          "lat": 45.6069792,
+          "lng": -73.61443899999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.60835857989272,
+            "lng": -73.61303407010728
+          },
+          "southwest": {
+            "lat": 45.60565892010727,
+            "lng": -73.61573372989272
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "name": "Winners",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 3018,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107835085327268012709\">A Google User</a>"
+          ],
+          "photo_reference": "CmRaAAAAzEZ-cKD0uQr0HpHd0gx-3N3TWqwknuTFMThKAE_8PI4LbVfk_cp2-KvYqjfl8s90PVmv_2YCKj81YHgpKaV49vy70QHq6rJy911r1A3xqOlElPKiFlY1a_YlePc0m746EhAQQoqT6s8lKBnvloNaaeEYGhR3GkFhbGC0rUWZINWJU6vMFyO-rQ",
+          "width": 3018
+        }
+      ],
+      "place_id": "ChIJo7-tkqQfyUwRaGhm7hUxUoA",
+      "plus_code": {
+        "compound_code": "J94P+Q6 Montreal, Quebec",
+        "global_code": "87Q8J94P+Q6"
+      },
+      "rating": 4.2,
+      "reference": "ChIJo7-tkqQfyUwRaGhm7hUxUoA",
+      "types": [
+        "department_store",
+        "shoe_store",
+        "point_of_interest",
+        "clothing_store",
+        "store",
+        "establishment"
+      ],
+      "user_ratings_total": 493
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "2101 Dollard Ave, Lasalle, Quebec H8N 1S2, Canada",
+      "geometry": {
+        "location": {
+          "lat": 45.4325673,
+          "lng": -73.63403169999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.43366632989272,
+            "lng": -73.63257807010727
+          },
+          "southwest": {
+            "lat": 45.43096667010727,
+            "lng": -73.63527772989272
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "name": "Winners",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 2988,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100328502937428467376\">Sina A</a>"
+          ],
+          "photo_reference": "CmRaAAAAog6aYVz662EOVhDtl-klWvs4r4nBDHrYquMqGXUksBClWOnmDf55XPjRmPtpqTGeeyC2lxSAicsOvsaV2SnwjLOlcfxBWREPT6NUdFrixPK2BgdHkLaQVPm0wkME_3UREhDw3xwMjFz7hgxzlxIP_TzsGhQEnhCwpTh1ZwZ8YCuUMTpc7a_DGA",
+          "width": 5312
+        }
+      ],
+      "place_id": "ChIJUT7uRTcRyUwR4aaHzOn_RSY",
+      "plus_code": {
+        "compound_code": "C9M8+29 Lasalle, Montreal, Quebec",
+        "global_code": "87Q8C9M8+29"
+      },
+      "rating": 3.9,
+      "reference": "ChIJUT7uRTcRyUwR4aaHzOn_RSY",
+      "types": [
+        "department_store",
+        "shoe_store",
+        "point_of_interest",
+        "clothing_store",
+        "store",
+        "establishment"
+      ],
+      "user_ratings_total": 865
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "3131 Blvd. Cote-Vertu Ouest, Saint-Laurent, Quebec H4R 1Y5, Canada",
+      "geometry": {
+        "location": {
+          "lat": 45.4985888,
+          "lng": -73.7081443
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.49979887989272,
+            "lng": -73.70667707010728
+          },
+          "southwest": {
+            "lat": 45.49709922010728,
+            "lng": -73.70937672989271
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "name": "Winners",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 4608,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114503919380903200117\">Son Ngo Lam</a>"
+          ],
+          "photo_reference": "CmRZAAAAl0KfZj1vA81QAgKBbO5dk05gpzmzowNvQH4UhycHa_nQnZXJwvs7z5EHqRpbA2W2LJJ0z2kFfyWn774d-YhaOT8xAgO6pXE5lzXtPiZSn7V7_voefWe0fKcNEgX8fPAAEhB9yEW-8-za6AM2f8ECl3d5GhRF0eA2QtBcO7G5Rf8aThIDFhhJmQ",
+          "width": 2592
+        }
+      ],
+      "place_id": "ChIJYW5ymAIYyUwRDrY24BYVxSo",
+      "plus_code": {
+        "compound_code": "F7XR+CP Saint-Laurent, Montreal, Quebec",
+        "global_code": "87Q8F7XR+CP"
+      },
+      "rating": 4,
+      "reference": "ChIJYW5ymAIYyUwRDrY24BYVxSo",
+      "types": [
+        "department_store",
+        "shoe_store",
+        "point_of_interest",
+        "clothing_store",
+        "store",
+        "establishment"
+      ],
+      "user_ratings_total": 313
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "7999 Boulevard des Galeries d'Anjou, Anjou, QC H1M 1W9, Canada",
+      "geometry": {
+        "location": {
+          "lat": 45.6008215,
+          "lng": -73.56238929999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.60199882989271,
+            "lng": -73.56140977010728
+          },
+          "southwest": {
+            "lat": 45.59929917010727,
+            "lng": -73.56410942989272
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "name": "Winners",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 2988,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103632822275794632021\">Khalid Hamdi</a>"
+          ],
+          "photo_reference": "CmRaAAAAfpqWGo4fjVfFeEx1i9hh8pwp9En2pTNOW8Ytsrl2TBNyFcEw0tIClejhoWUeN0KGlni8vMzA174a25YVtZpaWm-xCMQ0BVJ81DJsZS_jYNmI4W_P71en8kvOIzYbVpoYEhD7yqtX2_lZTO2Fd1HmqFOgGhS-YnlXP5lJUAVVX9LI3BJhl945AA",
+          "width": 5312
+        }
+      ],
+      "place_id": "ChIJ0fSBCWUeyUwRpHabjRwWTL4",
+      "plus_code": {
+        "compound_code": "JC2Q+82 Anjou, Montreal, Quebec",
+        "global_code": "87Q8JC2Q+82"
+      },
+      "rating": 4,
+      "reference": "ChIJ0fSBCWUeyUwRpHabjRwWTL4",
+      "types": [
+        "department_store",
+        "shoe_store",
+        "point_of_interest",
+        "clothing_store",
+        "store",
+        "establishment"
+      ],
+      "user_ratings_total": 742
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "7275 Rue Sherbrooke Estates #2000, Montreal, Quebec H1N 1E9, Canada",
+      "geometry": {
+        "location": {
+          "lat": 45.5928313,
+          "lng": -73.5440284
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.59425232989272,
+            "lng": -73.54291157010728
+          },
+          "southwest": {
+            "lat": 45.59155267010728,
+            "lng": -73.54561122989273
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "name": "HomeSense",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 2160,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114294316769693025531\">Reinier Meyer</a>"
+          ],
+          "photo_reference": "CmRaAAAAswkjVBHZmSTMPkg6ufY9d-4iPTcp5QuJGHFj0izq8H-PgmjncAwfbAR4PD3ZGgnfQHOzD3n8CjOVyg_IaVkso7622k8w5uQezGfbY5zERTQBDJlVryFzUR43k4wwRPRREhDPYvij4YRAUiH0GX4fq7zcGhTN-p1L0LG9lyZTzvyvGmr0wiIJmg",
+          "width": 3840
+        }
+      ],
+      "place_id": "ChIJ2waZFs0dyUwRhUw52B0Ojjg",
+      "plus_code": {
+        "compound_code": "HFV4+49 Montreal, Quebec",
+        "global_code": "87Q8HFV4+49"
+      },
+      "rating": 4.2,
+      "reference": "ChIJ2waZFs0dyUwRhUw52B0Ojjg",
+      "types": [
+        "department_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "user_ratings_total": 741
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "1310 Boulevard Le Corbusier, Laval, Quebec H7N 0A7, Canada",
+      "geometry": {
+        "location": {
+          "lat": 45.5579409,
+          "lng": -73.72674289999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.55936777989272,
+            "lng": -73.72523787010728
+          },
+          "southwest": {
+            "lat": 45.55666812010728,
+            "lng": -73.72793752989271
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "name": "Winners",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105450022982906508221\">A Google User</a>"
+          ],
+          "photo_reference": "CmRaAAAA0F7RTiBOZxSDI_ZaTM1PsyBEBRbPsEaf_jkoWY8h6fsa0EwQ6_1SRXhw9o5hsRxvLdoQUT24wuiJK8CqmKf2_3Lm0PEtlLZWNWQWsEQcxdDDkxik3EolaYYvh6sNbfTTEhANEfqUxeZClh27xIt8l5mIGhRyip__msBHV05lDeso-vexjuYYMQ",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJrxWkyzUiyUwR7Hn04WY1FJ4",
+      "plus_code": {
+        "compound_code": "H75F+58 Laval, Quebec",
+        "global_code": "87Q8H75F+58"
+      },
+      "rating": 4.1,
+      "reference": "ChIJrxWkyzUiyUwR7Hn04WY1FJ4",
+      "types": [
+        "department_store",
+        "shoe_store",
+        "point_of_interest",
+        "clothing_store",
+        "store",
+        "establishment"
+      ],
+      "user_ratings_total": 729
+    }
+  ],
+  "status": "OK"
+}

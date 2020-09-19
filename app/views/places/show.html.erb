@@ -1,0 +1,17 @@
+ <div class="container">
+  <%= simple_form_for([@place, @line]) do |f| %>
+    <%= f.text_field :start_date, type: "hidden" %>
+    <%= f.button :submit, "Start line", class: "btn btn-link btn-sm" %>
+  <% end %>
+  <% @place.lines.each do |line| %>
+    <%= line %><br>
+  <% end  %>
+  {<br>
+      name: <%= @place['name'] %>,<br>
+      address: <%= @place['address'] %>,<br>
+      latitude: <%= @place['latitude'] %>,<br>
+      longitude: <%= @place['longitude'] %>,<br>
+      rating: <%= @place['rating'] %>,<br>
+      google_place_id: <%= @place['google_place_id'] %><br>
+    },<br>
+</div>
