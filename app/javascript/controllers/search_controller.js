@@ -36,7 +36,6 @@ export default class extends Controller {
           lng: position.coords.longitude
         };
         this.userCoordinates = geolocation;
-        console.log(this.userCoordinates);
         const circle = new google.maps.Circle({
           center: geolocation,
           radius: position.coords.accuracy
