@@ -1,17 +1,14 @@
- <div class="container">
-  <% if @place.lines.empty? || !@place.lines.last.active? %>
-    <%= simple_form_for([@place, @line]) do |f| %>
-      <%= f.text_field :start_date, type: "hidden" %>
-      <%= f.button :submit, "Start line", class: "btn btn-link btn-sm" %>
+<div class="container" data-controller="line">
+  <div style="display: none;" data-target="line.place"><%= @place.id %></div>
+  <div data-target="line.start"></div>
+  <div data-target="line.timer">00:00:00</div>
+  <div data-target="line.control">
+    <%= button_tag(type: "submit", class: "btn btn-link btn-sm", data: { action: "click->line#startLine" }) do %>
+      Start line
     <% end %>
-  <% else %>
-    <%= simple_form_for([@place, @place.lines.last]) do |f| %>
-      <%= f.text_field :start_date, type: "hidden" %>
-      <%= f.button :submit, "End line", class: "btn btn-link btn-sm" %>
-    <% end %>
-    <%= @place.lines.last.start_date %>
-  <% end %>
-
+  </div>
+</div>
+<div class="container">
 <br>
   {<br>
       name: <%= @place['name'] %>,<br>
