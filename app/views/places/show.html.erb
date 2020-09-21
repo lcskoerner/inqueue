@@ -6,19 +6,21 @@
       <%= button_tag(type: "submit", class: "btn btn-link btn-sm", data: { action: "click->line#startLine" }) do %>
         Start line
       <% end %>
-      <%= render "lines/info" %>
+      <div id="info-container" data-place-id="<%= @place.id %>">
+        <%= render "lines/info" %>
+      </div>
     </div>
     <div data-target="line.place" style="display: none;"><%= @place.id %></div>
   <% else %>
     <% if @place.lines.last.user == current_user %>
-      <div class="container">
-        Started at <%= @place.lines.last.start_date.strftime("%l:%M %p") %>
-        <div data-target="line.timer">00:00:00</div>
-        <%= render "lines/controls" %>
-      </div>
+      Started at <%= @place.lines.last.start_date.strftime("%l:%M %p") %>
+      <div data-target="line.timer">00:00:00</div>
+      <%= render "lines/controls" %>
     <% else %>
       Started at <%= @place.lines.last.start_date.strftime("%l:%M %p") %>
-      <%= render "lines/info" %>
+      <div id="info-container" data-place-id="<%= @place.id %>">
+        <%= render "lines/info" %>
+      </div>
     <% end %>
   <% end %>
 </div>

@@ -15,7 +15,15 @@ class LinesController < ApplicationController
     render json: { results_html: html }
   end
 
-  def create
+  def refresh
+    @place = Place.find(params[:id])
+    @line = @place.lines.last
+    @line.end_date = DateTime.now
+    @line.save!
+    PlaceChannel.broadcast_to(
+      @place,
+      render_to_string(partial: "lines/info", locals: { place: @place })
+    )
   end
 
   def update

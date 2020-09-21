@@ -1,4 +1,5 @@
 import { Controller } from "stimulus"
+import { fetchWithToken } from "../utils/fetch_with_token"
 
 export default class extends Controller {
   static targets = ["timer", "place", "controls", "start"];
@@ -15,10 +16,14 @@ export default class extends Controller {
       date.setSeconds(date.getSeconds() + 1);
       this.timerTarget.innerText = String(date).split(" ")[4];
     }, 1000);
+
+    setInterval(() => {
+      const url = `/places/${this.placeTarget.innerText}/refresh`;
+      fetch(url);
+    }, 10000);
   }
 
   startLine() {
-    console.log(this.placeTarget.innerText);
     const url = `/places/${this.placeTarget.innerText}/start`;
     fetch(url)
       .then(response => response.json())
@@ -27,6 +32,10 @@ export default class extends Controller {
         this.controlsTarget.innerHTML = data.results_html;
         this.startTimer();
       });
+  }
+
+  refresh() {
+
   }
 
 }
