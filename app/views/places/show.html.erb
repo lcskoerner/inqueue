@@ -1,15 +1,29 @@
 <div class="container" data-controller="line">
-  <div style="display: none;" data-target="line.place"><%= @place.id %></div>
+  <% if @place.lines.empty? || !@place.lines.last.active %>
   <div data-target="line.start"></div>
-  <div data-target="line.timer">00:00:00</div>
-  <div data-target="line.control">
-    <%= button_tag(type: "submit", class: "btn btn-link btn-sm", data: { action: "click->line#startLine" }) do %>
-      Start line
+    <div data-target="line.timer">00:00:00</div>
+    <div data-target="line.controls">
+      <%= button_tag(type: "submit", class: "btn btn-link btn-sm", data: { action: "click->line#startLine" }) do %>
+        Start line
+      <% end %>
+      <%= render "lines/info" %>
+    </div>
+    <div data-target="line.place" style="display: none;"><%= @place.id %></div>
+  <% else %>
+    <% if @place.lines.last.user == current_user %>
+      <div class="container">
+        Started at <%= @place.lines.last.start_date.strftime("%l:%M %p") %>
+        <div data-target="line.timer">00:00:00</div>
+        <%= render "lines/controls" %>
+      </div>
+    <% else %>
+      Started at <%= @place.lines.last.start_date.strftime("%l:%M %p") %>
+      <%= render "lines/info" %>
     <% end %>
-  </div>
+  <% end %>
 </div>
+
 <div class="container">
-<br>
   {<br>
       name: <%= @place['name'] %>,<br>
       address: <%= @place['address'] %>,<br>

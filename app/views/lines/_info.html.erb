@@ -1,0 +1,6 @@
+<div>
+  <% if (((Time.zone.now - @place.lines.last.end_date) / 60) < 3) %>
+    Last lineup time: <%= pluralize(((@place.lines.last.end_date - @place.lines.last.start_date) / 60).to_i, 'minute')  %>
+    <br>
+  <% end %>
+</div>

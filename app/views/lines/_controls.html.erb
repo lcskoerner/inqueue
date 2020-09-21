@@ -1,4 +1,5 @@
-<%= simple_form_for([place, line]) do |f| %>
+<%= simple_form_for([@place, @place.lines.last]) do |f| %>
     <%= f.text_field :start_date, type: "hidden" %>
+    <%= f.hidden_field :id, :value => @place.id %>
     <%= f.button :submit, "End line", class: "btn btn-link btn-sm" %>
 <% end %>

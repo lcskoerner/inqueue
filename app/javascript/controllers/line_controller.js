@@ -1,8 +1,7 @@
 import { Controller } from "stimulus"
-import { fetchWithToken } from "../utils/fetch_with_token";
 
 export default class extends Controller {
-  static targets = ["timer", "place", "control", "start"];
+  static targets = ["timer", "place", "controls", "start"];
 
   connect() {
   }
@@ -19,15 +18,15 @@ export default class extends Controller {
   }
 
   startLine() {
+    console.log(this.placeTarget.innerText);
     const url = `/places/${this.placeTarget.innerText}/start`;
     fetch(url)
       .then(response => response.json())
       .then((data) => {
         console.log(data);
-        this.controlTarget.innerHTML = data.results_html;
+        this.controlsTarget.innerHTML = data.results_html;
+        this.startTimer();
       });
-
-    this.startTimer();
   }
 
 }

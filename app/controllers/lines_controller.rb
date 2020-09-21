@@ -6,10 +6,12 @@ class LinesController < ApplicationController
     @place = Place.find(params[:id])
     @line = Line.new
     @line.start_date = DateTime.now
+    @line.end_date = @line.start_date
     @line.active = true
     @line.place = @place
+    @line.user = current_user
     @line.save!
-    html = render_to_string(partial: "lines/controls", locals:  { place: @place, line: @line })
+    html = render_to_string(partial: "lines/controls", locals:  { place: @place })
     render json: { results_html: html }
   end
 
