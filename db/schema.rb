@@ -10,17 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_17_050243) do
+ActiveRecord::Schema.define(version: 2020_09_20_231640) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "lines", force: :cascade do |t|
-    t.date "start_date"
-    t.date "end_date"
+    t.datetime "start_date"
+    t.datetime "end_date"
     t.date "date"
     t.bigint "place_id", null: false
+    t.boolean "active"
+    t.bigint "user_id"
     t.index ["place_id"], name: "index_lines_on_place_id"
+    t.index ["user_id"], name: "index_lines_on_user_id"
   end
 
   create_table "places", force: :cascade do |t|
@@ -47,4 +50,5 @@ ActiveRecord::Schema.define(version: 2020_09_17_050243) do
   end
 
   add_foreign_key "lines", "places"
+  add_foreign_key "lines", "users"
 end
