@@ -1,5 +1,4 @@
 import { Controller } from "stimulus"
-import { fetchWithToken } from "../utils/fetch_with_token"
 
 export default class extends Controller {
   static targets = ['keyword', 'places'];

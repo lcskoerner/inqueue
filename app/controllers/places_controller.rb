@@ -50,7 +50,6 @@ class PlacesController < ApplicationController
     create
   end
 
-  # GET "/places/:id" , to: places#show
   def show
     @place = Place.find(params[:id])
     @line = Line.new
@@ -61,5 +60,4 @@ class PlacesController < ApplicationController
   def place_params
     params.permit(:query, :location)
   end
-
 end
