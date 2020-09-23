@@ -39,7 +39,7 @@ class PlacesController < ApplicationController
         @places << place
       end
     end
-    html = render_to_string(partial: "places/results", locals:  { places: @places })
+    html = render_to_string(partial: "places/results", locals: { places: @places })
     render json: { results_html: html }
   end
 
