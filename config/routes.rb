@@ -11,8 +11,14 @@ Rails.application.routes.draw do
   # MAP PAGE
   get "places/map", to: "places#map", as: :places_map
 
+  # SHOW PAGE
+  get "places/:id", to: "places#show", as: :place
+  # :create, :update
 
-  resources :places, only: [ :show, :create, :update ]  do
-    resources :lines, only: [ :show, :create, :update, :destroy ]
+  # LINE PAGE
+  # :create, :show, :update
+
+  resources :places, only: [ :create, :update ]  do
+    resources :lines, only: [ :create, :show, :update ]
   end
 end
