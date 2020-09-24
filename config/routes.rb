@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   # :create, :update
 
   # LINE PAGE
+  get "places/:place_id/lines/:id/refresh", to: "lines#refresh", as: :line_refresh
   # :create, :show, :update
 
   resources :places, only: [ :create, :update ]  do

@@ -1,5 +1,18 @@
-<p>Started at <%= @line.start_date %></p>
-<p>Clock</p>
-<%= simple_form_for([@place, @line]) do |f| %>
-    <%= f.button :submit, "End line", class: "btn btn-link btn-sm" %>
+<% if @line.active %>
+  <% if @line.user == current_user %>
+    <p>Started at <%= @line.start_date %></p>
+    <div class="clock-container" data-controller="line">
+      <div data-target="line.place" hidden><%= @place.id %></div>
+      <div data-target="line.line" hidden><%= @line.id %></div>
+      <div id="clock" data-target="line.clock"><%= image_tag "805.svg" %></div>
+    </div>
+    <%= simple_form_for([@place, @line]) do |f| %>
+        <%= f.button :submit, "End line", class: "btn btn-link btn-sm" %>
+    <% end %>
+  <% else %>
+    A line is being recorded by a different user!
+  <% end %>
+<% else %>
+  <p>Line up recorded!</p>
+  <p>Thank you for your participation!</p>
 <% end %>

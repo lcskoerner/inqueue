@@ -9,4 +9,6 @@ class Place < ApplicationRecord
     using: {
       tsearch: { prefix: true }
     }
+
+  scope :active_line, -> { joins(:lines).where(lines: { active: true }) }
 end

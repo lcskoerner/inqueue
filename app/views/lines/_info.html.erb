@@ -2,10 +2,11 @@
   <% if @place.lines.empty? %>
     <p>There are no lines recorded. Let's start one!</p>
   <% else %>
-    <% @place.lines.each do |line| %> <!-- TO DO Filter by TODAY DATE -->
+    <p>Lines recorded in the last hour:</p>
+    <% @place.lines.reverse().each do |line| %>
       <div>
-        <% if (Time.zone.now - line.end_date) < 3600 %>
-          Line time: <%= pluralize(((Time.zone.now - line.end_date) / 60).to_i, 'minute') %>
+        <% if (Time.zone.now - line.end_date) < 3600 && (((line.end_date - line.start_date) / 60) > 1 )%>
+          Line time: <%= pluralize(((line.end_date - line.start_date) / 60).to_i, 'minute') %>
         <% end %>
       </div>
     <% end %>
