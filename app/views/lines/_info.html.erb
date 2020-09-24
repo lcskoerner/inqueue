@@ -1,5 +1,6 @@
 <div class="info">
-  <p>Last line recorded:</p>
-  <%= pluralize(((line.end_date - line.start_date) / 60).to_i, 'minute') %>
+  <p>Last line recorded:
+    <%= pluralize(((line.end_date - line.start_date) / 60).to_i, 'minute') %>
+  </p>
 </div>
 

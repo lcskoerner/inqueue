@@ -14,5 +14,6 @@
   <% end %>
 <% else %>
   <p>Line up recorded!</p>
+  <p><%= (Time.zone.local(@line.end_date.year, @line.end_date.month, @line.end_date.day, 0, 0, 0) + (@line.end_date - @line.start_date)).to_s.split(" ")[1] %></p>
   <p>Thank you for your participation!</p>
 <% end %>
