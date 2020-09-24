@@ -21,7 +21,7 @@ class LinesController < ApplicationController
     @line.active = false
     @line.save!
     PlaceChannel.broadcast_to(
-      @place,
+      @place.google_place_id,
       render_to_string(partial: "lines/info", locals: { place: @place, line: @line })
     )
     redirect_to place_line_path(@place, @line)

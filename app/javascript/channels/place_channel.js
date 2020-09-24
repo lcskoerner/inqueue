@@ -2,8 +2,7 @@ import consumer from "./consumer";
 
 const initPlaceCable = () => {
   //let infoContainer = document.getElementById('info-container');
-  let infoContainers = document.querySelectorAll('#info-container');
-  console.log(infoContainers);
+  let infoContainers = document.querySelectorAll('.info-container');
   infoContainers.forEach((infoContainer) => {
     if (infoContainer) {
       const id = infoContainer.dataset.placeId;
