@@ -20,11 +20,10 @@ class LinesController < ApplicationController
     @line.end_date = DateTime.now
     @line.active = false
     @line.save!
-    @place.lines = @place.lines.select { |line| line.start_date.to_date == Date.today }
     PlaceChannel.broadcast_to(
-        @place,
-        render_to_string(partial: "lines/info", locals: { place: @place })
-      )
+      @place,
+      render_to_string(partial: "lines/info", locals: { place: @place, line: @line })
+    )
     redirect_to place_line_path(@place, @line)
   end
 

@@ -33,7 +33,7 @@ import '../components/bootstrap-switch';
 import { initPlaceCable } from '../channels/place_channel';
 
 document.addEventListener('turbolinks:load', () => {
-  initPlaceCable();
+  //initPlaceCable();
 });
 
 import "controllers"

@@ -24,7 +24,13 @@
     },<br>
 </div>
 
-<div id="info-container" data-place-id="<%= @place.id %>">
-  <%= render "lines/info" %>
-</div>
+<!-- TODO !-->
+<% unless @place.lines.empty? %>
+  <div class="container">
+    Historical data:
+    <% @place.lines.each do |line| %>
+      <%= line %>
+    <% end %>
+  </div>
+<% end %>
 

@@ -1,4 +1,5 @@
 import { Controller } from "stimulus"
+import { initPlaceCable } from '../channels/place_channel';
 
 export default class extends Controller {
   static targets = ['keyword', 'places'];
@@ -14,6 +15,7 @@ export default class extends Controller {
       .then((response) => response.json())
       .then((data) => {
           this.placesTarget.innerHTML = data.results_html;
+          initPlaceCable();
       });
   }
 

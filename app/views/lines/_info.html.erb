@@ -1,14 +1,6 @@
+<%= place.google_place_id %>
 <div class="info">
-  <% if @place.lines.empty? %>
-    <p>There are no lines recorded. Let's start one!</p>
-  <% else %>
-    <p>Lines recorded in the last hour:</p>
-    <% @place.lines.reverse().each do |line| %>
-      <div>
-        <% if (Time.zone.now - line.end_date) < 3600 && (((line.end_date - line.start_date) / 60) > 1 )%>
-          Line time: <%= pluralize(((line.end_date - line.start_date) / 60).to_i, 'minute') %>
-        <% end %>
-      </div>
-    <% end %>
-  <% end %>
+  <p>Last line recorded:</p>
+  <%= pluralize(((line.end_date - line.start_date) / 60).to_i, 'minute') %>
 </div>
+
