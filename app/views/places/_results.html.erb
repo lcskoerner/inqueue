@@ -1,25 +1,26 @@
 <% places.each do |place| %>
-  <%= simple_form_for(place, html: { id: "place-#{place.google_place_id}" }) do |f| %>
-    <%= f.text_field :google_place_id, id: place.google_place_id, type: "hidden" %>
+  <%= simple_form_for(place.first, html: { id: "place-#{place.first.google_place_id}" }) do |f| %>
+    <%= f.text_field :google_place_id, id: place.first.google_place_id, type: "hidden" %>
     <%= f.button :submit, "Show place", class: "btn btn-link btn-sm" %>
   <% end %>
   {<br>
-    name: <%= place['name'] %>,<br>
-    address: <%= place['address'] %>,<br>
-    latitude: <%= place['latitude'] %>,<br>
-    longitude: <%= place['longitude'] %>,<br>
-    rating: <%= place['rating'] %>,<br>
-    google_place_id: <%= place['google_place_id'] %><br>
+    name: <%= place.first['name'] %>,<br>
+    address: <%= place.first['address'] %>,<br>
+    latitude: <%= place.first['latitude'] %>,<br>
+    longitude: <%= place.first['longitude'] %>,<br>
+    rating: <%= place.first['rating'] %>,<br>
+    google_place_id: <%= place.first['google_place_id'] %><br>
+    distance: <%= place.second %><br>
   },<br>
 
   <!-- TODO REFRESH LINE INFO !-->
-  <div class="info-container" data-place-id="<%= place.google_place_id %>">
+  <div class="info-container" data-place-id="<%= place.first.google_place_id %>">
     <div class="info">
-      <% if place.lines.empty? %>
+      <% if place.first.lines.empty? %>
         <p>There are no lines recorded in the last hour.</p>
       <% else %>
         <p>Last line recorded:
-          <%= pluralize(((place.lines.inactive.last.end_date - place.lines.inactive.last.start_date) / 60).to_i, 'minute') %>
+          <%= pluralize(((place.first.lines.inactive.last.end_date - place.first.lines.inactive.last.start_date) / 60).to_i, 'minute') %>
         </p>
       <% end %>
     </div>
