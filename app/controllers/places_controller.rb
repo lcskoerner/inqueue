@@ -39,7 +39,7 @@ class PlacesController < ApplicationController
         @places << place
       end
     end
-    html = render_to_string(partial: "places/results", locals:  { places: @places })
+    html = render_to_string(partial: "places/results", locals: { places: @places })
     render json: { results_html: html }
   end
 
@@ -50,7 +50,6 @@ class PlacesController < ApplicationController
     create
   end
 
-  # GET "/places/:id" , to: places#show
   def show
     @place = Place.find(params[:id])
     @line = Line.new
@@ -61,5 +60,4 @@ class PlacesController < ApplicationController
   def place_params
     params.permit(:query, :location)
   end
-
 end
