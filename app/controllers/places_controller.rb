@@ -25,9 +25,12 @@ class PlacesController < ApplicationController
 
     unless keyword.nil? || keyword.empty?
       url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?'
-      resp = Faraday.get(url, {query: keyword, location: location, key: ENV['GOOGLE_API_KEY']}, {'Accept' => 'application/json'})
+      resp = Faraday.get(url, { query: keyword, location: location, key: ENV['GOOGLE_API_KEY'] }, { 'Accept' => 'application/json' })
       results = JSON.parse(resp.body)['results']
       results.each do |res|
+        url = 'https://maps.googleapis.com/maps/api/distancematrix/json?'
+        resp = Faraday.get(url, { origins: location, destinations: "place_id:#{res['place_id']}", key: ENV['GOOGLE_API_KEY'] }, { 'Accept' => 'application/json' })
+        distance = JSON.parse(resp.body)['rows'].first['elements'].first['distance']['text']
         place = Place.find_or_initialize_by(google_place_id: res['place_id'])
         if place.new_record?
           place.name = res['name']
@@ -36,9 +39,10 @@ class PlacesController < ApplicationController
           place.longitude = res['geometry']['location']['lng']
           place.rating = res['rating']
         end
-        @places << place
+        @places << [place, distance]
       end
     end
+
     html = render_to_string(partial: "places/results", locals: { places: @places })
     render json: { results_html: html }
   end
