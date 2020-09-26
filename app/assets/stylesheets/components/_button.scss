@@ -1,16 +1,24 @@
 @import "../config/index";
 
 .btn-hp {
-  position: absolute;
   border-radius: 50px;
-  width: 342px;
-  height: 37px;
-  left: 17px;
-  top: 501px;
-  background-color: $white-button;
-  color: $grey-button;
+  background-color: #F3F8FA;
+  color: #154763;
   border: none;
-  font-size: 17px;
+  font-size: 12px;
+  margin: 0 4vw;
+  text-align: center;
 }
 
-
+.btn-home{
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: #F3F8FA;
+  color: #154763;
+  border: none;
+  font-size: 20px;
+  margin: 0 4vw;
+  text-align: center;
+  display: flex;
+}

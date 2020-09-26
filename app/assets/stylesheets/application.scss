@@ -6,3 +6,12 @@
 @import "argon-design-system";
 @import "components/index";
 @import "config/index";
+
+body {
+  box-sizing: border-box;
+  background: linear-gradient(180deg, $blue-background -8.14%, rgba(79, 177, 235, 0.74) 93.32%);
+  border: 1px solid #000000;
+  min-height: 100vh;
+  color: white;
+}
+
