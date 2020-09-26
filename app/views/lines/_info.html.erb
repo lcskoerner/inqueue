@@ -1,8 +1,6 @@
-<div id="info">
-  <% unless @place.lines.last.nil? %>
-    <% if (((Time.zone.now - @place.lines.last.end_date) / 60) < 3) %>
-      Last lineup time: <%= pluralize(((@place.lines.last.end_date - @place.lines.last.start_date) / 60).to_i, 'minute')  %>
-      <br>
-    <% end %>
-  <% end %>
+<div class="info">
+  <p>Last line recorded:
+    <%= pluralize(((line.end_date - line.start_date) / 60).to_i, 'minute') %>
+  </p>
 </div>
+

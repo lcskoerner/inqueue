@@ -1,7 +1,6 @@
 class PlaceChannel < ApplicationCable::Channel
   def subscribed
-    place = Place.find(params[:id])
-    stream_for place
+    stream_for params[:id]
   end
 
   def unsubscribed
