@@ -7,7 +7,6 @@ export default class extends Controller {
 
   connect() {
     this.initAutoComplete();
-    initMap();
   }
 
   search() {
@@ -39,6 +38,7 @@ export default class extends Controller {
           lng: position.coords.longitude
         };
         this.userCoordinates = geolocation;
+        initMap(this.userCoordinates);
         const circle = new google.maps.Circle({
           center: geolocation,
           radius: position.coords.accuracy
