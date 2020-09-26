@@ -1,11 +1,13 @@
 import { Controller } from "stimulus"
 import { initPlaceCable } from '../channels/place_channel';
+import { initMap } from '../utils/map';
 
 export default class extends Controller {
   static targets = ['keyword', 'places'];
 
   connect() {
     this.initAutoComplete();
+    initMap();
   }
 
   search() {
