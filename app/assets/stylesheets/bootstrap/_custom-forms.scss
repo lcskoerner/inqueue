@@ -127,7 +127,7 @@
     &::before {
       border-color: $custom-checkbox-indicator-indeterminate-border-color;
       @include gradient-bg($custom-checkbox-indicator-indeterminate-bg);
-      @include box-shadow($custom-checkbox-indicator-indeterminate-box-shadow);
+      //@include box-shadow($custom-checkbox-indicator-indeterminate-box-shadow);
     }
     &::after {
       background-image: escape-svg($custom-checkbox-indicator-icon-indeterminate);
