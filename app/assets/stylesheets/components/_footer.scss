@@ -1,10 +1,26 @@
-.footer {
+.footer-back {
+  display: flex;
   background-color: $white-button;
   position: fixed;
   width: 44px;
   height: 44px;
-  left: 10vw;
+  margin: 0 15px;
   bottom: 8vh;
   border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-home {
+  display: flex;
+  background-color: $white-button;
+  position: fixed;
+  width: 44px;
+  height: 44px;
+  left: 20vw;
+  bottom: 8vh;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
 }
 
