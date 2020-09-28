@@ -1,7 +1,7 @@
 <% places.each do |place| %>
   <%= simple_form_for(place.first, html: { id: "place-#{place.first.google_place_id}" }) do |f| %>
     <%= f.text_field :google_place_id, id: place.first.google_place_id, type: "hidden" %>
-    <%= f.button :submit, "Show place", class: "btn btn-link btn-sm" %>
+    <%= f.button :submit, "Show place", class: "btn-hp btn-link btn-sm" %>
   <% end %>
   {<br>
     name: <%= place.first['name'] %>,<br>
