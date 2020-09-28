@@ -1,10 +1,11 @@
-<div class="container" style="text-align: center;">
-  <h1>Logo</h1>
-  <h2>InQueue creates smart lineups</h2>
+<div class="background background-grid">
+  <div class="container-inqueue">
+    <%= render 'shared/logo' %>
+    <h2>Inqueue creates smart lineups</h2>
+    <p>Join the movement starting a lineup once your are on spot. Find places and their waiting time</p>
+  </div>
+  <%= link_to "I want to find a location", places_search_path, class: "btn-home" %>
+  <%= link_to "I want to start a lineup", places_map_path, class: "btn-home" %>
+<!--   <div class="footer"></div>
+ --></div>
 
-  <p>Join the movement starting a lineup once your are on the spot</p>
-  <p>Find places and their waiting time</p>
-
-  <%= link_to "I want to find a location", places_search_path, class: "btn btn-primary" %>
-  <%= link_to "I want to start a lineup", places_map_path, class: "btn btn-primary" %>
-</div>

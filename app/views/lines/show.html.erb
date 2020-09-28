@@ -4,10 +4,10 @@
     <div class="clock-container" data-controller="line">
       <div data-target="line.place" hidden><%= @place.id %></div>
       <div data-target="line.line" hidden><%= @line.id %></div>
-      <div id="clock" data-target="line.clock"><%= image_tag "805.svg" %></div>
+      <div id="clock" data-target="line.clock"><%= image_tag "spin.svg" %></div>
     </div>
     <%= simple_form_for([@place, @line]) do |f| %>
-        <%= f.button :submit, "End line", class: "btn btn-link btn-sm" %>
+        <%= f.button :submit, "End line", class: "btn-hp btn-link btn-sm" %>
     <% end %>
   <% else %>
     A line is being recorded by another user!
