@@ -10,3 +10,9 @@
   grid-template-rows: 60vh 48px 48px;
 }
 
+.background-grid-search{
+  gap: 24px;
+  display: grid;
+  grid-template-columns: 180px 1fr 2fr;
+}
+

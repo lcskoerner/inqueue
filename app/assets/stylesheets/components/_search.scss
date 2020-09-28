@@ -1,10 +1,16 @@
 .search-bar {
+  border-radius: 50px;
+  background-color: #F3F8FA;
+  color: #154763;
+  border: none;
+  font-size: 20px;
+  margin: 0 4vw;
   width: 342px;
   height: 37px;
-  left: 17px;
-  top: 442px;
-  background: $white-button;
-  border-radius: 50px;
+}
+
+.search-btn{
   border: none;
+  background: $white-button;
 }
 

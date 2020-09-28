@@ -1,9 +1,9 @@
 <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?libraries=places&key=#{ENV['GOOGLE_API_KEY']}" %>
 
 <div>
-    <div class="d-flex">
-      <%= text_field_tag :query, params[:query], data: { target: 'search.keyword' }, class: "form-control" %>
-      <%= button_tag(type: "submit", class: "btn btn-primary",
+    <div class=" container-search-bar background-grid-search">
+      <%= text_field_tag :query, params[:query], data: { target: 'search.keyword' }, class: "search-bar" %>
+      <%= button_tag(type: "submit", class: "btn search-btn",
         data: { action: 'click->search#search' }) do %>
         <i class="ni ni-send"></i>
       <% end %>
