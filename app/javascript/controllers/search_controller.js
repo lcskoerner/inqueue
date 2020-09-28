@@ -47,7 +47,16 @@ export default class extends Controller {
           radius: position.coords.accuracy
         });
         autocomplete.setBounds(circle.getBounds());
-      }, (err) => console.log(err),
+      }, (err) => {
+        console.log(err)
+        const geolocation = {
+          // lat: position.coords.latitude,
+          // lng: position.coords.longitude
+          lat: 45.4812971,
+          lng: -73.5859582
+        };
+        this.userCoordinates = geolocation;
+      },
       options);
     }
 
