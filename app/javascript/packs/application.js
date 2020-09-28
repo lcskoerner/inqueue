@@ -30,7 +30,7 @@ import "bootstrap";
 import '../components/argon-design-system';
 import '../components/datetimepicker';
 import '../components/bootstrap-switch';
-import { initPlaceCable } from '../channels/place_channel';
+//import { initPlaceCable } from '../channels/place_channel';
 
 document.addEventListener('turbolinks:load', () => {
   //initPlaceCable();

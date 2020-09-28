@@ -3349,7 +3349,24 @@ globule@^1.0.0:
     lodash "~4.17.10"
     minimatch "~3.0.2"
 
-graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.2.2:
+glogg@^1.0.0:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/glogg/-/glogg-1.0.2.tgz#2d7dd702beda22eb3bffadf880696da6d846313f"
+  integrity sha512-5mwUoSuBk44Y4EshyiqcH95ZntbDdTQqA3QYSrxmzj28Ai0vXBGMH1ApSANH14j2sIRtqCEyg6PfsuP7ElOEDA==
+  dependencies:
+    sparkles "^1.0.0"
+
+gmaps@^0.4.25:
+  version "0.4.25"
+  resolved "https://registry.yarnpkg.com/gmaps/-/gmaps-0.4.25.tgz#ea98fa83668fb07b879b47d989b5ee1504d33455"
+  integrity sha512-a2qZl3SMbfGow02WUWWH9+Cc0kVrUCnhSh+b13P7XTi8pauLHpa0A/8rYK9x4C/iPdkfAY0FAOyuwqHnLPHi4w==
+
+gonzales-pe@3.0.0-28:
+  version "3.0.0-28"
+  resolved "https://registry.yarnpkg.com/gonzales-pe/-/gonzales-pe-3.0.0-28.tgz#dd50b41dd15b682a28c40e5f0ff2007901ac62bd"
+  integrity sha1-3VC0HdFbaCooxA5fD/IAeQGsYr0=
+
+graceful-fs@^4.0.0, graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.2.2:
   version "4.2.4"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.4.tgz#2256bde14d3632958c465ebc96dc467ca07a29fb"
   integrity sha512-WjKPNJF79dtJAVniUlGGWHYGz2jWxT6VhN/4m1NdkbZ2nOsEF+cI1Edgql5zCRhs/VsQYRvrXctxktVXZUkixw==
