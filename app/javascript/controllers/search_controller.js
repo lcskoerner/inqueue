@@ -16,6 +16,7 @@ export default class extends Controller {
       .then((response) => response.json())
       .then((data) => {
           this.placesTarget.innerHTML = data.results_html;
+          initMap(this.userCoordinates);
           initPlaceCable();
       });
   }
@@ -34,11 +35,13 @@ export default class extends Controller {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(position => {
         const geolocation = {
-          lat: position.coords.latitude,
-          lng: position.coords.longitude
+          // lat: position.coords.latitude,
+          // lng: position.coords.longitude
+          lat: 45.4812971,
+          lng: -73.5859582
         };
         this.userCoordinates = geolocation;
-        initMap(this.userCoordinates);
+        console.log(this.userCoordinates);
         const circle = new google.maps.Circle({
           center: geolocation,
           radius: position.coords.accuracy
