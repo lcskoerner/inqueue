@@ -22,3 +22,20 @@
   margin: 0 4vw;
   text-align: center;
 }
+
+.btn-primary {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: none;
+  border: none;
+  background: $white-button;
+  color: #313232;
+}
+
+.btn-primary:hover {
+  box-shadow: none !important;
+  color: $white-button !important;
+  text-decoration: underline !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+}
