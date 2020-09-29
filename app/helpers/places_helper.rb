@@ -10,6 +10,4 @@ module PlacesHelper
       return "green"
     end
   end
-
-
 end

@@ -7,3 +7,17 @@
     font-weight: 500;
   }
 }
+
+.show-link {
+  color: #505050;
+  padding: 0;
+}
+
+.show-link:hover{
+  box-shadow: none;
+  color: #505050;
+  text-decoration: underline;
+  -webkit-transform: none;
+  transform: none;
+}
+
