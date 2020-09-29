@@ -20,6 +20,8 @@ class LinesController < ApplicationController
     @line.end_date = DateTime.now
     @line.active = false
     @line.save!
+    @place.last_line = ((@line.end_date - @line.start_date) / 60).to_i
+    @place.save!
     PlaceChannel.broadcast_to(
       @place.google_place_id,
       render_to_string(partial: "lines/info", locals: { place: @place, line: @line })

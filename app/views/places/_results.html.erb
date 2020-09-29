@@ -3,7 +3,37 @@
     <%= f.text_field :google_place_id, id: place.first.google_place_id, type: "hidden" %>
     <%= f.button :submit, "Show place", class: "btn-hp btn-link btn-sm" %>
   <% end %>
-  {<br>
+
+  <div class="card mt-3 mb-3" style="background-color: <%= @colors[set_color(place.first.last_line).to_sym]%>;">
+    <div class="card-body">
+      <div class="d-flex justify-content-between">
+        <div class="card-title mb-0">
+          <strong><%= place.first['name'] %></strong>
+        </div>
+        <small class="text-right"><%= place.second %></small>
+      </div>
+      <div class="d-flex flex-wrap">
+        <small><%= place.first['address'] %></small>
+      </div>
+      <div class="info-container text-right" data-place-id="<%= place.first.google_place_id %>">
+        <div class="info">
+          <% unless place.first.last_line.nil? %>
+            <h3 class="mb-0">
+              <% if place.first.last_line >= 30 %>
+                &gt; 30m
+              <% elsif place.first.last_line >= 15 %>
+                +15m
+              <% elsif place.first.last_line < 15 %>
+                &lt; 15m
+              <% end %>
+            </h3>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- {<br>
     name: <%= place.first['name'] %>,<br>
     address: <%= place.first['address'] %>,<br>
     latitude: <%= place.first['latitude'] %>,<br>
@@ -11,18 +41,7 @@
     rating: <%= place.first['rating'] %>,<br>
     google_place_id: <%= place.first['google_place_id'] %>,<br>
     distance: <%= place.second %><br>
-  },<br>
+  },<br> -->
 
   <!-- TODO REFRESH LINE INFO !-->
-  <div class="info-container" data-place-id="<%= place.first.google_place_id %>">
-    <div class="info">
-      <% if place.first.lines.empty? %>
-        <p>There are no lines recorded in the last hour.</p>
-      <% else %>
-        <p>Last line recorded:
-          <%= pluralize(((place.first.lines.inactive.last.end_date - place.first.lines.inactive.last.start_date) / 60).to_i, 'minute') %>
-        </p>
-      <% end %>
-    </div>
-  </div>
 <% end %>

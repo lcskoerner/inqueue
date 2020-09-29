@@ -22,6 +22,7 @@ class PlacesController < ApplicationController
     keyword = place_params[:query]
     location = place_params[:location]
     map = false
+    @colors = { white: "white", green: "#D8FFD8", orange: "#FCC97D", red: "#F1A298" }
 
     @places = []
     @places = search_google(keyword, location) unless keyword.nil? || keyword.empty?
@@ -38,7 +39,7 @@ class PlacesController < ApplicationController
       end
       html = render_to_string(partial: "places/map", locals: { places: @places, markers: @markers })
     else
-      html = render_to_string(partial: "places/results", locals: { places: @places })
+      html = render_to_string(partial: "places/results", locals: { places: @places, colors: @colors })
     end
 
     render json: { results_html: html }
