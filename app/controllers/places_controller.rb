@@ -18,33 +18,52 @@ class PlacesController < ApplicationController
   end
 
   def results
+    puts params
     keyword = place_params[:query]
     location = place_params[:location]
+    map = false
+    @colors = { white: "white", green: "#D8FFD8", orange: "#FCC97D", red: "#F1A298" }
 
     @places = []
+    @places = search_google(keyword, location) unless keyword.nil? || keyword.empty?
 
-    unless keyword.nil? || keyword.empty?
-      url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?'
-      resp = Faraday.get(url, { query: keyword, location: location, key: ENV['GOOGLE_API_KEY'] }, { 'Accept' => 'application/json' })
-      results = JSON.parse(resp.body)['results']
-      results.each do |res|
-        url = 'https://maps.googleapis.com/maps/api/distancematrix/json?'
-        resp = Faraday.get(url, { origins: location, destinations: "place_id:#{res['place_id']}", key: ENV['GOOGLE_API_KEY'] }, { 'Accept' => 'application/json' })
-        distance = JSON.parse(resp.body)['rows'].first['elements'].first['distance']['text']
-        place = Place.find_or_initialize_by(google_place_id: res['place_id'])
-        if place.new_record?
-          place.name = res['name']
-          place.address = res['formatted_address']
-          place.latitude = res['geometry']['location']['lat']
-          place.longitude = res['geometry']['location']['lng']
-          place.rating = res['rating']
-        end
-        @places << [place, distance]
+    if map
+      @markers = @places.map do |place|
+        {
+          lat: place.first.latitude,
+          lng: place.first.longitude
+          # infoWindow: { content: render_to_string(partial: "/flats/map_box", locals: { flat: flat }) }
+          # Uncomment the above line if you want each of your markers to display a info window when clicked
+          # (you will also need to create the partial "/flats/map_box")
+        }
       end
+      html = render_to_string(partial: "places/map", locals: { places: @places, markers: @markers })
+    else
+      html = render_to_string(partial: "places/results", locals: { places: @places, colors: @colors })
     end
 
-    html = render_to_string(partial: "places/results", locals: { places: @places })
     render json: { results_html: html }
+  end
+
+  def search_google(keyword, location)
+    url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?'
+    resp = Faraday.get(url, { query: keyword, location: location, key: ENV['GOOGLE_API_KEY'] }, { 'Accept' => 'application/json' })
+    results = JSON.parse(resp.body)['results']
+    results.each do |res|
+      url = 'https://maps.googleapis.com/maps/api/distancematrix/json?'
+      resp = Faraday.get(url, { origins: location, destinations: "place_id:#{res['place_id']}", key: ENV['GOOGLE_API_KEY'] }, { 'Accept' => 'application/json' })
+      distance = JSON.parse(resp.body)['rows'].first['elements'].first['distance']['text']
+      place = Place.find_or_initialize_by(google_place_id: res['place_id'])
+      if place.new_record?
+        place.name = res['name']
+        place.address = res['formatted_address']
+        place.latitude = res['geometry']['location']['lat']
+        place.longitude = res['geometry']['location']['lng']
+        place.rating = res['rating']
+      end
+      @places << [place, distance]
+    end
+    return @places
   end
 
   def search
