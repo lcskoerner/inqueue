@@ -17,14 +17,16 @@ class LinesController < ApplicationController
   def update
     @place = Place.find(params[:place_id])
     @line = Line.find(params[:id])
+    @colors = { white: "white", green: "#D8FFD8", orange: "#FCC97D", red: "#F1A298" }
     @line.end_date = DateTime.now
     @line.active = false
     @line.save!
     @place.last_line = ((@line.end_date - @line.start_date) / 60).to_i
     @place.save!
+
     PlaceChannel.broadcast_to(
       @place.google_place_id,
-      render_to_string(partial: "lines/info", locals: { place: @place, line: @line })
+      [@colors[helpers.set_color(@place.last_line).to_sym], render_to_string(partial: "lines/info", locals: { place: @place, line: @line })]
     )
     redirect_to place_line_path(@place, @line)
   end

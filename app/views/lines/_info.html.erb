@@ -1,6 +1,13 @@
 <div class="info">
-  <p>Last line recorded:
-    <%= pluralize(((line.end_date - line.start_date) / 60).to_i, 'minute') %>
-  </p>
+  <h3 class="mb-0">
+    <% unless place.last_line.nil? %>
+      <% if place.last_line >= 30 %>
+        &gt; 30m
+      <% elsif place.last_line >= 15 %>
+        &gt; 15m
+      <% elsif place.last_line < 15 %>
+        &lt; 15m
+      <% end %>
+    <% end %>
+  </h3>
 </div>
-
