@@ -1,14 +1,17 @@
 import consumer from "./consumer";
 
 const initPlaceCable = () => {
-  let infoContainers = document.querySelectorAll('.info-container');
-  infoContainers.forEach((infoContainer) => {
-    if (infoContainer) {
-      const id = infoContainer.dataset.placeId;
+  let placeContainers = document.querySelectorAll('.card');
+
+  placeContainers.forEach((placeContainer) => {
+    if (placeContainer) {
+      const id = placeContainer.dataset.placeId;
+      let infoContainer = placeContainer.querySelector('.info-container');
 
       consumer.subscriptions.create({ channel: "PlaceChannel", id: id }, {
         received(data) {
-          infoContainer.innerHTML = data;
+          placeContainer.style.backgroundColor = data[0];
+          infoContainer.innerHTML = data[1];
         },
       });
     }

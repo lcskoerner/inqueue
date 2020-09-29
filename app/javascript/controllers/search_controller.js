@@ -60,6 +60,14 @@ export default class extends Controller {
       options);
     }
 
+    const geolocation = {
+      // lat: position.coords.latitude,
+      // lng: position.coords.longitude
+      lat: 45.4812971,
+      lng: -73.5859582
+    };
+    this.userCoordinates = geolocation;
+
     google.maps.event.addDomListener(this.keywordTarget, 'keydown', function (e) {
       if (e.key === "Enter") {
         e.preventDefault(); // Do not submit the form on Enter.

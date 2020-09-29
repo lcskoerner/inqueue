@@ -1,12 +1,23 @@
 .card {
+  color: #505050;
+  border-radius: 15px 15px 15px 15px;
+  font-family: "Roboto", "sans-serif";
+  h3 {
+    color: #505050;
+    font-weight: 500;
+  }
+}
 
-  /* Background */
-  position: absolute;
-  width: 343px;
-  height: 110px;
-  left: 0px;
-  top: 0px;
-  background: #D8FFD8;
-  border-radius: 15px;
+.show-link {
+  color: #505050;
+  padding: 0;
+}
+
+.show-link:hover{
+  box-shadow: none;
+  color: #505050;
+  text-decoration: underline;
+  -webkit-transform: none;
+  transform: none;
 }
 
