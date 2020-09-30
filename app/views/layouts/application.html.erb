@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Inqueue</title>
+    <title>InQueue</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,11 +11,11 @@
     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?libraries=places&key=#{ENV['GOOGLE_API_KEY']}" %>
   </head>
 
-  <body>
+  <body class="Site">
     <%= render 'shared/flashes' %>
-    <main>
+    <main class="Site-content">
       <%= yield %>
-      <%= render 'shared/footer' %>
     </main>
+    <%= render 'shared/footer' %>
   </body>
 </html>
