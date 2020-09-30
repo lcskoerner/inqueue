@@ -5,9 +5,11 @@
         <div class="card-title mb-0">
           <%= @place['name'] %>
         </div>
-        <small class="text-right">Distance</small>
+        <small class="text-right"><% @place['rating'].times do %>⭐️<% end %></small>
       </div>
-      <%= @place['address'] %>
+      <small class="text-left"><%= @place['vicinity'] %></small>
+      <p class="mb-0 mt-2"><%= @place['phone_number'] %></p>
+      <p><%= @place['address'] %></p>
       <div class="text-center mb-3 mt-3">
         <% if @place.lines.empty? || !@place.lines.last.active %>
           <%= simple_form_for([@place, @line]) do |f| %>
