@@ -28,3 +28,23 @@
   color: white;
   text-align: center;
 }
+
+#clock {
+  margin: 0;
+  font-size: 72px;
+}
+
+.recorded {
+  color: #333333;
+  background-color: #FCC97D;
+  h1 {
+    color: #333333;
+    font-size: 72px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.clock-container {
+  text-align: center;
+}
