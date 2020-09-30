@@ -1,7 +1,11 @@
 <div class="container text-center mt-8">
   <%= render 'shared/logo' %>
   <h2>InQueue creates smart lineups</h2>
-  <p class="mb-8">Join the movement starting a lineup once your are on spot. Find places and their waiting time</p>
-  <%= link_to "I want to find a location", places_search_path, class: "btn-home mb-4 p-2" %>
-  <%= link_to "I want to start a lineup", places_map_path, class: "btn-home p-2" %>
+  <p class="mb-6">Join the movement starting a lineup once your are on spot. Find places and their waiting time</p>
+  <div class="mb-5">
+    <%= link_to "I want to find a location", places_search_path, class: "btn-home p-3 mx-100" %>
+  </div>
+  <div class="mb-5">
+    <%= link_to "I want to start a lineup", places_map_path, class: "btn-home p-3" %>
+  </div>
 </div>

@@ -5,7 +5,7 @@
         <div class="card-title mb-0">
           <%= @place['name'] %>
         </div>
-        <small class="text-right"><% @place['rating'].times do %>⭐️<% end %></small>
+        <small class="text-right"><% @place['rating'].to_i.times do %>⭐️<% end %></small>
       </div>
       <small class="text-left"><%= @place['vicinity'] %></small>
       <p class="mb-0 mt-2"><%= @place['phone_number'] %></p>
