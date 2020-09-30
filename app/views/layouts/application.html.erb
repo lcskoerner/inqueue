@@ -13,7 +13,9 @@
 
   <body>
     <%= render 'shared/flashes' %>
-    <%= render 'shared/footer' %>
-    <%= yield %>
+    <main>
+      <%= yield %>
+      <%= render 'shared/footer' %>
+    </main>
   </body>
 </html>
