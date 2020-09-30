@@ -1,27 +1,27 @@
   @import "../config/index";
 
-.btn-hp {
-  border-radius: 50px;
-  background-color: #F3F8FA;
-  color: #154763;
-  border: none;
-  font-size: 12px;
-  margin: 0 4vw;
-  text-align: center;
-}
+// .btn-hp {
+//   border-radius: 50px;
+//   background-color: #F3F8FA;
+//   color: #154763;
+//   border: none;
+//   font-size: 12px;
+//   margin: 0 4vw;
+//   text-align: center;
+// }
 
-.btn-home{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50px;
-  background-color: #F3F8FA;
-  color: #154763;
-  border: none;
-  font-size: 20px;
-  margin: 0 4vw;
-  text-align: center;
-}
+// .btn-home{
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   border-radius: 50px;
+//   background-color: #F3F8FA;
+//   color: #154763;
+//   border: none;
+//   font-size: 20px;
+//   margin: 0 4vw;
+//   text-align: center;
+// }
 
 a:hover {
   color: #0e3043;
@@ -39,6 +39,23 @@ a:hover {
 .btn-primary:hover{
   background-color: $white-button;
   color: #313232;
+  box-shadow: none;
+  -webkit-transform: none;
+}
+
+.btn-control {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 50px;
+  box-shadow: none;
+  border: none;
+  background: #3686B2;
+  color: white;
+}
+
+.btn-control:hover {
+  background-color: #285b78;
+  color: white;
   box-shadow: none;
   -webkit-transform: none;
 }
