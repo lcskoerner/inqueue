@@ -3,7 +3,7 @@
     <%= text_field_tag :query, params[:query], data: { target: 'search.keyword' }, class: "form-control search-bar" %>
     <%= button_tag(type: "submit", class: "btn btn-primary",
       data: { action: 'click->search#search' }) do %>
-      <i class="fa fa-search"></i>
+      <%= render "shared/loupe" %>
     <% end %>
   </div>
 </div>
