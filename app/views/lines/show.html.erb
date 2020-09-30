@@ -1,19 +1,31 @@
-<% if @line.active %>
-  <% if @line.user == current_user %>
-    <p>Started at <%= @line.start_date %></p>
-    <div class="clock-container" data-controller="line">
-      <div data-target="line.place" hidden><%= @place.id %></div>
-      <div data-target="line.line" hidden><%= @line.id %></div>
-      <div id="clock" data-target="line.clock"><%= image_tag "spin.svg" %></div>
-    </div>
-    <%= simple_form_for([@place, @line]) do |f| %>
-        <%= f.button :submit, "End line", class: "btn-hp btn-link btn-sm" %>
+<div class="container mt-5">
+  <% if @line.active %>
+    <% if @line.user == current_user %>
+      <div class="clock-container" data-controller="line">
+        <p class="mb-0"><%= @line.start_date.strftime("Started at %I:%M %p") %></p>
+        <div data-target="line.place" hidden><%= @place.id %></div>
+        <div data-target="line.line" hidden><%= @line.id %></div>
+        <div id="clock" data-target="line.clock"><%= image_tag "spin.svg" %></div>
+        <%= simple_form_for([@place, @line]) do |f| %>
+            <%= f.button :submit, "End line", class: "btn-end" %>
+        <% end %>
+      </div>
+    <% else %>
+      A line is being recorded by another user!
     <% end %>
   <% else %>
-    A line is being recorded by another user!
+    <div class="d-flex justify-content-center">
+      <div class="card pt-0 pb-0 text-center recorded" style="width: 24rem;">
+        <div class="card-body p-0 m-0">
+          <div class="card-title recorded-title text-left ml-4">
+            Line up recorded!
+          </div>
+          <h1 class="m-0 p-0">
+            <%= (Time.zone.local(@line.end_date.year, @line.end_date.month, @line.end_date.day, 0, 0, 0) + (@line.end_date - @line.start_date)).to_s.split(" ")[1] %>
+          </h1>
+        </div>
+      </div>
+    </div>
+    <%= render "places/place" %>
   <% end %>
-<% else %>
-  <p>Line up recorded!</p>
-  <p><%= (Time.zone.local(@line.end_date.year, @line.end_date.month, @line.end_date.day, 0, 0, 0) + (@line.end_date - @line.start_date)).to_s.split(" ")[1] %></p>
-  <p>Thank you for your participation!</p>
-<% end %>
+</div>
