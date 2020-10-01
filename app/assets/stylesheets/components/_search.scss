@@ -1,10 +1,13 @@
 .search-bar {
-  width: 342px;
-  height: 37px;
-  left: 17px;
-  top: 442px;
+  padding-left: 20px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
   background: $white-button;
-  border-radius: 50px;
   border: none;
 }
 
+.pac-container {
+  margin-left: 20px !important;
+  max-width: 936px !important;
+  min-width: 291px !important;
+}

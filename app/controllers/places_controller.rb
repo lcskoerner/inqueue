@@ -1,9 +1,9 @@
 class PlacesController < ApplicationController
   def create
     google_place_id = params[:place][:google_place_id]
-    fields = 'name,formatted_address,geometry,place_id'
+    fields = 'name,formatted_address,geometry,place_id,rating,formatted_phone_number,business_status,price_level,vicinity'
     url = 'https://maps.googleapis.com/maps/api/place/details/json?'
-    resp = Faraday.get(url, { place_id: google_place_id, fields: fields, key: ENV['GOOGLE_API_KEY'] }, {'Accept' => 'application/json'})
+    resp = Faraday.get(url, { place_id: google_place_id, fields: fields, key: ENV['GOOGLE_API_KEY'] }, { 'Accept' => 'application/json' })
     place = JSON.parse(resp.body)['result']
     @place = Place.find_or_initialize_by(google_place_id: place['place_id'])
     if @place.new_record?
@@ -12,13 +12,14 @@ class PlacesController < ApplicationController
       @place.latitude = place['geometry']['location']['lat']
       @place.longitude = place['geometry']['location']['lng']
       @place.rating = place['rating']
+      @place.phone_number = place['formatted_phone_number']
+      @place.vicinity = place['vicinity']
       @place.save!
     end
     redirect_to place_path(@place)
   end
 
   def results
-    puts params
     keyword = place_params[:query]
     location = place_params[:location]
     map = false
@@ -50,9 +51,7 @@ class PlacesController < ApplicationController
     resp = Faraday.get(url, { query: keyword, location: location, key: ENV['GOOGLE_API_KEY'] }, { 'Accept' => 'application/json' })
     results = JSON.parse(resp.body)['results']
     results.each do |res|
-      url = 'https://maps.googleapis.com/maps/api/distancematrix/json?'
-      resp = Faraday.get(url, { origins: location, destinations: "place_id:#{res['place_id']}", key: ENV['GOOGLE_API_KEY'] }, { 'Accept' => 'application/json' })
-      distance = JSON.parse(resp.body)['rows'].first['elements'].first['distance']['text']
+      distance = search_distance(location, res)
       place = Place.find_or_initialize_by(google_place_id: res['place_id'])
       if place.new_record?
         place.name = res['name']
@@ -64,6 +63,12 @@ class PlacesController < ApplicationController
       @places << [place, distance]
     end
     return @places
+  end
+
+  def search_distance(location, res)
+    url = 'https://maps.googleapis.com/maps/api/distancematrix/json?'
+    resp = Faraday.get(url, { origins: location, destinations: "place_id:#{res['place_id']}", key: ENV['GOOGLE_API_KEY'] }, { 'Accept' => 'application/json' })
+    JSON.parse(resp.body)['rows'].first['elements'].first['distance']['text']
   end
 
   def search

@@ -1,0 +1,10 @@
+<footer class="d-flex pt-3 pb-3 footer">
+  <%= link_to "javascript:history.back();", class: "footer-back mr-4 ml-3" do %>
+    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 10L10 1M2 10L10 19M2 10H23" stroke="#313131" stroke-width="2"/>
+    </svg>
+  <% end %>
+  <%= link_to root_path, class: "footer-home" do %>
+    <%= image_tag "home.png", width: 24 %>
+  <% end %>
+</footer>

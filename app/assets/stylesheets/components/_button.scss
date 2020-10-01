@@ -1,24 +1,101 @@
-@import "../config/index";
+  @import "../config/index";
 
-.btn-hp {
-  border-radius: 50px;
-  background-color: #F3F8FA;
-  color: #154763;
-  border: none;
-  font-size: 12px;
-  margin: 0 4vw;
-  text-align: center;
-}
+// .btn-hp {
+//   border-radius: 50px;
+//   background-color: #F3F8FA;
+//   color: #154763;
+//   border: none;
+//   font-size: 12px;
+//   margin: 0 4vw;
+//   text-align: center;
+// }
 
 .btn-home{
-  align-items: center;
-  justify-content: center;
+  // width: 100%;
+  // max-width: 300px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
   border-radius: 50px;
   background-color: #F3F8FA;
   color: #154763;
   border: none;
   font-size: 20px;
-  margin: 0 4vw;
+  // margin: 0 4vw;
   text-align: center;
-  display: flex;
+}
+
+.btn-end{
+  // width: 100%;
+  // max-width: 300px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  border-radius: 50px;
+  background-color: #F1A298;
+  color: white;
+  border: none;
+  font-size: 14px;
+  // margin: 0 4vw;
+  text-align: center;
+}
+
+a:hover {
+  color: #0e3043;
+}
+
+.btn-search {
+  border-top-left-radius: 0;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 0;
+  box-shadow: none;
+  border: none;
+  background: $white-button;
+  color: #313232;
+}
+
+.btn-search:hover{
+  background-color: $white-button;
+  color: #313232;
+  box-shadow: none;
+  -webkit-transform: none;
+}
+
+.btn-search:active{
+  background-color: $white-button;
+  color: #313232;
+  box-shadow: none;
+  -webkit-transform: none;
+}
+
+.btn-search:focus{
+  background-color: $white-button;
+  color: #313232;
+  box-shadow: none !important;
+  -webkit-transform: none;
+}
+
+.btn-search:visited{
+  background-color: $white-button;
+  color: #313232;
+  box-shadow: none;
+  -webkit-transform: none;
+}
+
+.btn-control {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 50px;
+  box-shadow: none;
+  border: none;
+  background: #3686B2;
+  color: white;
+}
+
+.btn-control:hover {
+  background-color: #285b78;
+  color: white;
+  box-shadow: none;
+  -webkit-transform: none;
 }

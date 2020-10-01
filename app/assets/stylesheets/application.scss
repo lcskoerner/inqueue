@@ -7,11 +7,49 @@
 @import "components/index";
 @import "config/index";
 
-body {
-  box-sizing: border-box;
+.Site {
   background: linear-gradient(180deg, $blue-background -8.14%, rgba(79, 177, 235, 0.74) 93.32%);
-  border: 1px solid #000000;
-  min-height: 100vh;
   color: white;
+  min-height: 100vh;
+  // display: flex;
+  // display-direction: column;
 }
 
+// .Site-content {
+//   flex: 1;
+// }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+}
+
+#clock {
+  margin: 0;
+  font-size: 72px;
+}
+
+.recorded {
+  color: #333333;
+  background-color: #FCC97D;
+  h1 {
+    color: #333333;
+    font-size: 72px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.clock-container {
+  text-align: center;
+}
+
+#query {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}

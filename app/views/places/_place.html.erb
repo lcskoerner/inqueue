@@ -1,6 +1,40 @@
-<div class="container place">
-  <%= place.first['name'] %>
-  <%= place.second %>
-  <%= place.first['address'] %>
-  <%= place.first['rating'] %>
+<div class="container">
+  <div class="card mt-3 mb-3">
+    <div class="card-body p-3">
+      <div class="d-flex justify-content-between">
+        <div class="card-title mb-0">
+          <%= @place['name'] %>
+        </div>
+        <small class="text-right"><% @place['rating'].to_i.times do %>⭐️<% end %></small>
+      </div>
+      <small class="text-left"><%= @place['vicinity'] %></small>
+      <p class="mb-0 mt-2"><%= @place['phone_number'] %></p>
+      <p><%= @place['address'] %></p>
+      <div class="text-center mb-3 mt-3">
+        <% if @place.lines.empty? || !@place.lines.last.active %>
+          <%= simple_form_for([@place, @line]) do |f| %>
+              <%= f.button :submit, "Start line", class: "btn btn-control" %>
+          <% end %>
+        <% else %>
+          <% if @place.lines.last.user == current_user %>
+            <%= simple_form_for([@place, @place.lines.last]) do |f| %>
+              <div>
+                Started at: <%= @place.lines.last.start_date %>
+              </div>
+              <%= f.button :submit, "End line", class: "btn-hp btn-link btn-sm" %>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+      <!-- TODO !-->
+      <% unless @place.lines.empty? %>
+        <div class="container">
+          Historical data:
+          <% @place.lines.each do |line| %>
+            <%= line %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
 </div>
