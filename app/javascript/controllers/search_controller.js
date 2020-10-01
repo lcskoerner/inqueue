@@ -11,6 +11,7 @@ export default class extends Controller {
 
   search() {
     const keyword = this.keywordTarget.value;
+    this.placesTarget.firstElementChild.style.visibility = 'visible';
     const url = `/places/results?query=${keyword}&location=${this.userCoordinates.lat},${this.userCoordinates.lng}`;
     fetch(url)
       .then((response) => response.json())
