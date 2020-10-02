@@ -1,0 +1,39 @@
+.clock-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.clock-container-1 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(50% 50% at 50% 50%, #B0CDDC 0%, rgba(35, 141, 194, 0.24) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 50%;
+}
+
+.clock-container-2 {
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(50% 50% at 50% 50%, #77B2D0 0%, rgba(35, 141, 194, 0.24) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 50%;
+}
+
+.clock-container-3 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(50% 50% at 50% 50%, #1F6E97 0%, rgba(35, 141, 194, 0.24) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 50%;
+}

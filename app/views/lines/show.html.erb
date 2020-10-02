@@ -2,13 +2,19 @@
   <% if @line.active %>
     <% if @line.user == current_user %>
       <div class="clock-container" data-controller="line">
-        <p class="mb-0"><%= @line.start_date.strftime("Started at %I:%M %p") %></p>
-        <div data-target="line.place" hidden><%= @place.id %></div>
-        <div data-target="line.line" hidden><%= @line.id %></div>
-        <div id="clock" data-target="line.clock"><%= image_tag "spin.svg" %></div>
-        <%= simple_form_for([@place, @line]) do |f| %>
-            <%= f.button :submit, "End line", class: "btn-end" %>
-        <% end %>
+       <div class="clock-container-1">
+        <div class="clock-container-2">
+           <div class="clock-container-3">
+              <p class="mb-0"><%= @line.start_date.strftime("Started at %I:%M %p") %></p>
+              <div data-target="line.place" hidden><%= @place.id %></div>
+              <div data-target="line.line" hidden><%= @line.id %></div>
+              <div id="clock" data-target="line.clock"><%= image_tag "spin.svg" %></div>
+                <%= simple_form_for([@place, @line]) do |f| %>
+                  <%= f.button :submit, "End line", class: "btn-end" %>
+                <% end %>
+            </div>
+          </div>
+        </div>
       </div>
     <% else %>
       A line is being recorded by another user!
