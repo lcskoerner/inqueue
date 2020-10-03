@@ -2,3 +2,10 @@
   height: calc(100vh - 20px - 2rem - 43px);
   overflow-y: scroll;
 }
+  ::-webkit-scrollbar              { display: none}
+  ::-webkit-scrollbar-button       { display: none }
+  ::-webkit-scrollbar-track        { display: none }
+  ::-webkit-scrollbar-track-piece  { display: none }
+  ::-webkit-scrollbar-thumb        { display: none }
+  ::-webkit-scrollbar-corner       { display: none }
+  ::-webkit-resizer                { display: none }
