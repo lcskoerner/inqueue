@@ -1,3 +1,13 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+}
+
 .footer-back {
   display: flex;
   background-color: $white-button;
@@ -35,6 +45,13 @@
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  right: 15px;
+  bottom: 16px;
+  z-index: 100000;
+  &:active{
+    background: red;
+  }
 }
 
 .footer-blur{

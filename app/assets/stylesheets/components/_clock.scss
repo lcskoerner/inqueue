@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .clock-container-1 {
@@ -36,4 +37,9 @@
   justify-content: center;
   flex-direction: column;
   border-radius: 50%;
+}
+
+#clock {
+  margin: 0;
+  font-size: 72px;
 }

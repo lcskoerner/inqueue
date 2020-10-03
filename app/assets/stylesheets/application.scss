@@ -19,21 +19,6 @@
 //   flex: 1;
 // }
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: transparent;
-  color: white;
-  text-align: center;
-}
-
-#clock {
-  margin: 0;
-  font-size: 72px;
-}
-
 .recorded {
   color: #333333;
   background-color: #FCC97D;
@@ -43,10 +28,6 @@
     margin: 0;
     padding: 0;
   }
-}
-
-.clock-container {
-  text-align: center;
 }
 
 #query {
