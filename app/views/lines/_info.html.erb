@@ -1,12 +1,8 @@
 <div class="info">
   <h3 class="mb-0">
     <% unless place.last_line.nil? %>
-      <% if place.last_line >= 30 %>
-        &gt; 30m
-      <% elsif place.last_line >= 15 %>
-        &gt; 15m
-      <% elsif place.last_line < 15 %>
-        &lt; 15m
+      <% unless place.last_line.nil? || place.last_line == 0 %>
+        <%= place.last_line %> min
       <% end %>
     <% end %>
   </h3>
