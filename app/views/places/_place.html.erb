@@ -1,15 +1,14 @@
 <div class="container">
   <div class="card mt-3 mb-3">
     <div class="card-body p-3">
-      <div class="d-flex justify-content-between">
+      <div class="d-flex justify-content-between mb-0">
         <div class="card-title mb-0">
           <%= @place['name'] %>
         </div>
-        <small class="text-right"><% @place['rating'].to_i.times do %>⭐️<% end %></small>
+        <small class="text-right"><%= @distance %></small>
       </div>
-      <small class="text-left"><%= @place['vicinity'] %></small>
+        <small class="text-left"><%= @place['vicinity'] %></small>
       <p class="mb-0 mt-2"><%= @place['phone_number'] %></p>
-      <p><%= @place['address'] %></p>
       <div class="text-center mb-3 mt-3">
         <% if @place.lines.empty? || !@place.lines.last.active %>
           <%= simple_form_for([@place, @line]) do |f| %>
