@@ -22,12 +22,16 @@ class PlacesController < ApplicationController
   def results
     keyword = place_params[:query]
     location = place_params[:location]
-    map = false
+    map = place_params[:map] == "true"
+    puts "this is "
+    puts map
+    
     @colors = { white: "white", green: "#D8FFD8", orange: "#FCC97D", red: "#F1A298" }
 
     @places = []
-    @places = search_google(keyword, location) unless keyword.nil? || keyword.empty?
 
+    @places = search_google(keyword, location) unless keyword.nil? || keyword.empty?
+  
     if map
       @markers = @places.map do |place|
         {
@@ -86,6 +90,6 @@ class PlacesController < ApplicationController
   private
 
   def place_params
-    params.permit(:query, :location)
+    params.permit(:query, :location, :map)
   end
 end
