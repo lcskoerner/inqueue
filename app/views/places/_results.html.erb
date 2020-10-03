@@ -11,7 +11,8 @@
       <div class="d-flex justify-content-between">
         <div class="card-title mb-0">
           <%= simple_form_for(place.first, html: { id: "place-#{place.first.google_place_id}" }) do |f| %>
-            <%= f.text_field :google_place_id, id: place.first.google_place_id, type: "hidden", class: "mb-0" %>
+            <%= f.text_field :google_place_id, id: place.first.google_place_id, type: "hidden" %>
+            <%= hidden_field_tag 'distance', place.second %>
             <%= f.button :submit, place.first['name'], class: "show-link mb-0" %>
           <% end %>
           <small style="font-size: 12px;"><em><%= place.first.place_type %></em></small>
