@@ -1,3 +1,6 @@
+<div class="sorting_icon">
+  <%= render 'shared/sorting' %>
+</div>
 <% places.each do |place| %>
   <div
     class="card mt-3 mb-3"
@@ -8,27 +11,22 @@
       <div class="d-flex justify-content-between">
         <div class="card-title mb-0">
           <%= simple_form_for(place.first, html: { id: "place-#{place.first.google_place_id}" }) do |f| %>
-            <%= f.text_field :google_place_id, id: place.first.google_place_id, type: "hidden" %>
-            <%= f.button :submit, place.first['name'], class: "show-link" %>
+            <%= f.text_field :google_place_id, id: place.first.google_place_id, type: "hidden", class: "mb-0" %>
+            <%= f.button :submit, place.first['name'], class: "show-link mb-0" %>
           <% end %>
+          <small style="font-size: 12px;"><em><%= place.first.place_type %></em></small>
         </div>
-        <small class="text-right"><%= place.second %></small>
+        <small class="text-right mb-4"><%= place.second %></small>
       </div>
       <div class="d-flex justify-content-between">
         <div class="d-flex flex-wrap" style="width: 220px";>
-        <small><%= place.first['address'] %></small>
+          <small><%= place.first['address'] %></small>
         </div>
         <div class="info-container text-right">
           <div class="info">
             <h3 class="mb-0">
-              <% unless place.first.last_line.nil? %>
-                <% if place.first.last_line >= 30 %>
-                  &gt; 30m
-                <% elsif place.first.last_line >= 15 %>
-                  &gt; 15m
-                <% elsif place.first.last_line < 15 %>
-                  &lt; 15m
-                <% end %>
+              <% unless place.first.last_line.nil? || place.first.last_line == 0 %>
+                <%= place.first.last_line %> min
               <% end %>
             </h3>
           </div>
@@ -36,4 +34,5 @@
       </div>
     </div>
   </div>
+
 <% end %>
