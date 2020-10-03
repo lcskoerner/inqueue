@@ -1,11 +1,13 @@
 class PlacesController < ApplicationController
   def create
     google_place_id = params[:place][:google_place_id]
-    fields = 'name,formatted_address,geometry,place_id,rating,formatted_phone_number,business_status,price_level,vicinity'
+    fields = 'name,formatted_address,geometry,place_id,rating,formatted_phone_number,business_status,price_level,vicinity,types'
     url = 'https://maps.googleapis.com/maps/api/place/details/json?'
     resp = Faraday.get(url, { place_id: google_place_id, fields: fields, key: ENV['GOOGLE_API_KEY'] }, { 'Accept' => 'application/json' })
     place = JSON.parse(resp.body)['result']
     @place = Place.find_or_initialize_by(google_place_id: place['place_id'])
+    puts "this is place:"
+    puts @place
     if @place.new_record?
       @place.name = place['name']
       @place.address = place['formatted_address']
@@ -14,6 +16,7 @@ class PlacesController < ApplicationController
       @place.rating = place['rating']
       @place.phone_number = place['formatted_phone_number']
       @place.vicinity = place['vicinity']
+      @place.place_type = place['types'].first.gsub("_", " ").capitalize
       @place.save!
     end
     redirect_to place_path(@place)
@@ -59,6 +62,7 @@ class PlacesController < ApplicationController
         place.latitude = res['geometry']['location']['lat']
         place.longitude = res['geometry']['location']['lng']
         place.rating = res['rating']
+        place.place_type = res['types'].first.gsub("_", " ").capitalize
       end
       @places << [place, distance]
     end
