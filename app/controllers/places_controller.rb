@@ -14,6 +14,7 @@ class PlacesController < ApplicationController
       @place.rating = place['rating']
       @place.phone_number = place['formatted_phone_number']
       @place.vicinity = place['vicinity']
+      @place.type = place['type'].first
       @place.save!
     end
     redirect_to place_path(@place)
