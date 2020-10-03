@@ -1,9 +1,4 @@
 .container {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   h2 {
     color: white;
     font-size: 22px;
@@ -11,28 +6,16 @@
   }
 }
 
-// .container-inqueue {
-//   width: 100vw;
-//   padding: 0 4vw;
-//   color: #FFFFFF;
-//   align-items: center;
-//   flex-direction: column;
-//   display: flex;
-//   text-align: center;
-//   align-self: center;
-// }
+.container-homepage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
-// .container-inqueue h1{
-//   color: #FFFFFF;
-// }
-
-// .container-inqueue h2{
-//   color: #FFFFFF;
-//   font-size:24px;
-// }
-
-// .container-inqueue p{
-//   color: #FFFFFF;
-//   font-size:12px;
-// }
-
+  h2 {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+  }
+}
