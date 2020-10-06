@@ -7,12 +7,20 @@ export default class extends Controller {
 
   connect() {
     this.initAutoComplete();
+    initMap(this.userCoordinates);
   }
 
   search() {
     const keyword = this.keywordTarget.value;
-    this.placesTarget.firstElementChild.style.visibility = 'visible';
-    const url = `/places/results?query=${keyword}&location=${this.userCoordinates.lat},${this.userCoordinates.lng}`;
+    //this.placesTarget.firstElementChild.style.visibility = 'visible';
+    console.log(this.placesTarget.firstElementChild.id);
+    let toggle = 'false';
+    if (this.placesTarget.firstElementChild.id === "map-container"){
+      toggle = 'true';
+    } 
+    console.log(toggle);
+    const url = `/places/results?query=${keyword}&location=${this.userCoordinates.lat},${this.userCoordinates.lng}&map=${toggle}`;
+    
     fetch(url)
       .then((response) => response.json())
       .then((data) => {

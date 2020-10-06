@@ -25,18 +25,26 @@ class PlacesController < ApplicationController
   def results
     keyword = place_params[:query]
     location = place_params[:location]
-    map = false
+    map = place_params[:map] == "true"
+    puts "this is "
+    puts map
+    
     @colors = { white: "white", green: "#D8FFD8", orange: "#FCC97D", red: "#F1A298" }
 
     @places = []
-    @places = search_google(keyword, location) unless keyword.nil? || keyword.empty?
 
+    @places = search_google(keyword, location) unless keyword.nil? || keyword.empty?
+  
     if map
+
       @markers = @places.map do |place|
         {
           lat: place.first.latitude,
-          lng: place.first.longitude
-          # infoWindow: { content: render_to_string(partial: "/flats/map_box", locals: { flat: flat }) }
+          lng: place.first.longitude,
+          #title: place.name,
+          label: place.first.last_line.nil? ? "no lines" : "#{place.first.last_line} min",
+          icon: "https://res.cloudinary.com/koerner/image/upload/v1601760248/marker_icon_b1acug.png"
+          # infoWindow: { content: render_to_string(partial: "/places/infoWindow", locals: { place: place }) }
           # Uncomment the above line if you want each of your markers to display a info window when clicked
           # (you will also need to create the partial "/flats/map_box")
         }
@@ -85,6 +93,6 @@ class PlacesController < ApplicationController
   private
 
   def place_params
-    params.permit(:query, :location)
+    params.permit(:query, :location, :map)
   end
 end
