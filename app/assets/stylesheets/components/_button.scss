@@ -10,7 +10,13 @@
   border: none;
   font-size: 16px;
   text-align: center;
+    &:focus{
+    background: #3982B0;
+    box-shadow: none;
+    -webkit-transform: none;
 }
+}
+
 
 .btn-grid {
   display: grid;
