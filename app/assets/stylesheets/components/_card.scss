@@ -8,6 +8,19 @@
   }
 }
 
+.card-line-recorded {
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  background-color: #D5BD8A;
+  text-align: left;
+  border-radius: 10px 10px 0px 0px;
+  p {
+    margin: 0;
+  }
+}
+
+
 .show-link {
   color: #505050;
   padding: 0;

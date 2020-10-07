@@ -20,11 +20,12 @@
       A line is being recorded by another user!
     <% end %>
   <% else %>
-    <div class="d-flex justify-content-center">
+    <div class="container d-flex justify-content-center">
       <div class="card pt-0 pb-0 text-center recorded" style="width: 24rem;">
         <div class="card-body p-0 m-0">
-          <div class="card-title recorded-title text-left ml-4">
-            Line up recorded!
+          <div class="card-line-recorded">
+            <%= render "shared/star" %>
+             <p class="ml-1">Line up recorded!</p>
           </div>
           <h1 class="m-0 p-0">
             <%= (Time.zone.local(@line.end_date.year, @line.end_date.month, @line.end_date.day, 0, 0, 0) + (@line.end_date - @line.start_date)).to_s.split(" ")[1] %>

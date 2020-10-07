@@ -11,11 +11,8 @@
 .footer-back {
   display: flex;
   background-color: $white-button;
-  // position: fixed;
   width: 44px;
   height: 44px;
-  // left: 3vh;
-  // bottom: 8vh;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
@@ -24,11 +21,8 @@
 .footer-home {
   display: flex;
   background-color: $white-button;
-  // position: fixed;
   width: 44px;
   height: 44px;
-  // left: 20vw;
-  // bottom: 8vh;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
@@ -37,11 +31,8 @@
 .footer-sorting {
   display: flex;
   background-color: $white-button;
-  // position: fixed;
   width: 44px;
   height: 44px;
-  // left: 20vw;
-  // bottom: 8vh;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
@@ -60,5 +51,5 @@
     left: 0;
     right: 0;
     height: 140px;
-    background: linear-gradient(transparent, #66afdb 68%);
+    background: linear-gradient(transparent, #66afdb 68%)
 }
