@@ -9,7 +9,15 @@ const buildMarkers = (markers, map) => {
       });
     m.addListener("click", () => {
       // TODO
-      console.log("callback");
+      const placeHeader = document.getElementById("place-header");
+      console.log(placeHeader);
+      placeHeader.innerHTML = '';
+      const placeHeaderContent =
+      `
+      ${marker.title}
+      `;
+      placeHeader.innerHTML = placeHeaderContent;
+      console.log(placeHeader);
     });
     return m;
   });

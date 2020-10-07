@@ -18,7 +18,6 @@ class PlacesController < ApplicationController
       @place.place_type = place['types'].first.gsub("_", " ").capitalize
       @place.save!
     end
-    # show([@place, @distance])
     redirect_to place_path(@place, { distance: distance })
   end
 
