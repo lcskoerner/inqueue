@@ -44,8 +44,6 @@ class PlacesController < ApplicationController
           # (you will also need to create the partial "/flats/map_box")
         }
       end
-      puts "these are markers"
-      puts @markers
       html = render_to_string(partial: "places/map", locals: { places: @places, markers: @markers })
     else
       html = render_to_string(partial: "places/results", locals: { places: @places, colors: @colors })

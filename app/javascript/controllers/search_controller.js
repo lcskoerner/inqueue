@@ -7,25 +7,25 @@ export default class extends Controller {
 
   connect() {
     this.initAutoComplete();
-    initMap(this.userCoordinates);
+    initMap({ lat: 45.4812971, lng: -73.5859582 });
   }
 
   search() {
     const keyword = this.keywordTarget.value;
-    //this.placesTarget.firstElementChild.style.visibility = 'visible';
-    console.log(this.placesTarget.firstElementChild.id);
+    if (this.placesTarget.firstElementChild !== undefined) {
+      this.placesTarget.firstElementChild.style.visibility = 'visible';
+    }
     let toggle = 'false';
     if (this.placesTarget.firstElementChild.id === "map-container"){
       toggle = 'true';
-    } 
-    console.log(toggle);
+    }
     const url = `/places/results?query=${keyword}&location=${this.userCoordinates.lat},${this.userCoordinates.lng}&map=${toggle}`;
-    
+
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
           this.placesTarget.innerHTML = data.results_html;
-          initMap(this.userCoordinates);
+          initMap({ lat: 45.4812971, lng: -73.5859582 });
           initPlaceCable();
       });
   }
