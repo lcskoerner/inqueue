@@ -23,7 +23,7 @@
     <% @places.each do |place| %>
       <%= simple_form_for(place.first, html: { id: "place-#{place.first.google_place_id}" }) do |f| %>
         <%= f.text_field :google_place_id, id: place.first.google_place_id, type: "hidden" %>
-        <%= hidden_field_tag 'distance', place.second %>
+        <%= hidden_field_tag 'distance', place.second, name: 'distance', id: "distance-#{place.first.google_place_id}" %>
         <%= f.button :submit, place.first['name'], class: "show-link mb-0" %>
       <% end %>
     <% end %>
