@@ -36,7 +36,9 @@ class PlacesController < ApplicationController
         {
           lat: place.first.latitude,
           lng: place.first.longitude,
-          # title: place.name,
+          title: place.first.name,
+          address: place.first.address,
+          distance: place.second,
           label: place.first.last_line.nil? ? "no lines" : "#{place.first.last_line} min",
           icon: ActionController::Base.helpers.image_path("#{helpers.set_color(place.first.last_line)}.png")
           # infoWindow: { content: render_to_string(partial: "/places/infoWindow", locals: { place: place }) }
