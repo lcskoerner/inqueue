@@ -8,16 +8,23 @@ const buildMarkers = (markers, map) => {
         label: marker.label
       });
     m.addListener("click", () => {
-      // TODO
       const placeHeader = document.getElementById("place-header");
-      console.log(placeHeader);
-      placeHeader.innerHTML = '';
-      const placeHeaderContent =
-      `
-      ${marker.title}
-      `;
-      placeHeader.innerHTML = placeHeaderContent;
-      console.log(placeHeader);
+      placeHeader.style.display = 'block';
+      const cardTitle = document.getElementById("place-title");
+      cardTitle.addEventListener("click", () => {
+        const placeForm = document.getElementById(`place-${marker.google_place_id}`);
+        placeForm.submit();
+      });
+      cardTitle.onmouseover = (event) => {
+        event.target.style.cursor = "pointer";
+        event.target.style.textDecoration = "underline";
+      }
+      cardTitle.innerText = marker.title;
+      const cardDistance = document.getElementById("place-distance");
+      cardDistance.innerText = marker.distance;
+      const cardAddress = document.getElementById("place-address");
+      const addressArray = marker.address.split(",");
+      cardAddress.innerText = addressArray[0].concat(",").concat(addressArray[1]);
     });
     return m;
   });

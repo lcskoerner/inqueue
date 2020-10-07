@@ -38,6 +38,7 @@ class PlacesController < ApplicationController
           title: place.first.name,
           address: place.first.address,
           distance: place.second,
+          google_place_id: place.first.google_place_id,
           label: place.first.last_line.nil? ? "no lines" : "#{place.first.last_line} min",
           icon: ActionController::Base.helpers.image_path("#{helpers.set_color(place.first.last_line)}.png")
           # infoWindow: { content: render_to_string(partial: "/places/infoWindow", locals: { place: place }) }
