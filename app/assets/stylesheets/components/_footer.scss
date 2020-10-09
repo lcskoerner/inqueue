@@ -45,6 +45,20 @@
   }
 }
 
+.footer-globe {
+  position: fixed;
+  right: 83px;
+  bottom: 16px;
+  z-index: 100000;
+}
+
+.footer-place {
+  position: fixed;
+  right: 83px;
+  bottom: 16px;
+  z-index: 100000;
+}
+
 .footer-blur{
     position: fixed;
     bottom: 0;

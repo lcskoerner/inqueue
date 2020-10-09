@@ -13,7 +13,7 @@
       <div class="text-center mb-3 mt-3">
         <% if @place.lines.empty? || !@place.lines.last.active %>
           <%= simple_form_for([@place, @line]) do |f| %>
-              <%= f.button :submit, "Start line", class: "btn btn-control" %>
+              <%= f.button :submit, "I'm in line", class: "btn btn-control" %>
           <% end %>
         <% else %>
           <% if @place.lines.last.user == current_user %>
