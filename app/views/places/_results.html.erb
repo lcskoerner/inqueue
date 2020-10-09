@@ -1,6 +1,9 @@
 <div class="footer-sorting">
   <%= render 'shared/sorting' %>
 </div>
+<%= link_to places_map_path, class: "footer-globe" do %>
+  <%= render 'shared/globe' %>
+<% end %>
 <% places.each do |place| %>
   <div
     class="card mt-3 mb-3"
