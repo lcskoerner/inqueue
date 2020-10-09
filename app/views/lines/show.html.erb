@@ -20,8 +20,8 @@
       A line is being recorded by another user!
     <% end %>
   <% else %>
-    <div class="container d-flex justify-content-center">
-      <div class="card pt-0 pb-0 text-center recorded" style="width: 24rem;">
+    <div class="container d-flex justify-content-center" >
+      <div class="card pt-0 pb-0 text-center recorded" style="width: 565px">
         <div class="card-body p-0 m-0">
           <div class="card-line-recorded">
             <%= render "shared/star" %>
@@ -33,6 +33,27 @@
         </div>
       </div>
     </div>
-    <%= render "places/place" %>
+    <div class="container" style="max-width: 600px;">
+  <div class="card mt-3 mb-3">
+    <div class="card-body p-3">
+      <div class="d-flex justify-content-between mb-0">
+        <div class="card-title mb-0">
+          <strong><%= @place['name'] %></strong>
+        </div>
+        <small class="text-right"><%= @distance %></small>
+      </div>
+      <small class="text-left"><%= @place['vicinity'] %></small>
+      <br>
+      <small class="mb-0 mt-2"><%= @place['phone_number'] %></small>
+      <p class="text-center mb-0">Thank you for your participation !</p>
+      <!-- TODO !-->
+      <% unless @place.lines.empty? %>
+        <hr class="mt-5 mb-2">
+        <p class="text-center mb-0">Based on your amazing participation, this is the lineup trend of this location:</p>
+        <%= render "places/graph" %>
+      <% end %>
+    </div>
+  </div>
+</div>
   <% end %>
 </div>
