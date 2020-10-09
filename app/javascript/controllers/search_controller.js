@@ -10,16 +10,20 @@ export default class extends Controller {
     initMap({ lat: 45.4812971, lng: -73.5859582 });
   }
 
-  search() {
+  search(map = null) {
+    const mapContainer = document.getElementById("map-container");
     const keyword = this.keywordTarget.value;
     if (this.placesTarget.firstElementChild !== undefined) {
       this.placesTarget.firstElementChild.style.visibility = 'visible';
     }
-    let toggle = 'false';
-    if (this.placesTarget.firstElementChild.id === "map-container"){
-      toggle = 'true';
+
+    if (mapContainer && map != "false") {
+      map = "true";
+    } else if (mapContainer && map == "false") {
+      map = "false";
     }
-    const url = `/places/results?query=${keyword}&location=${this.userCoordinates.lat},${this.userCoordinates.lng}&map=${toggle}`;
+
+    const url = `/places/results?query=${keyword}&location=${this.userCoordinates.lat},${this.userCoordinates.lng}&map=${map}`;
 
     fetch(url)
       .then((response) => response.json())
@@ -28,6 +32,11 @@ export default class extends Controller {
           initMap({ lat: 45.4812971, lng: -73.5859582 });
           initPlaceCable();
       });
+  }
+
+  toggle(event) {
+    const toggle = event.currentTarget.dataset.map;
+    this.search(toggle);
   }
 
   initAutoComplete() {
