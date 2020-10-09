@@ -41,7 +41,11 @@
       <!-- TODO !-->
       <% unless @place.lines.empty? %>
         <hr class="mt-5 mb-2">
-        <p class="text-center mb-0">Based on your amazing participation, this is the lineup trend of this location:</p>
+          <div class="d-flex justify-content-center"> 
+        <div class="d-flex flex-wrap" style="width: 230px;">
+        <p class="text-center mb-0" style="font-size: 80%;">Based on your amazing participation, this is the lineup trend of this location:</p>
+        </div>
+        </div>
         <%= render "places/graph" %>
       <% end %>
     </div>
