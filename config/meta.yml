@@ -1,0 +1,7 @@
+# config/meta.yml
+
+meta_product_name: "InQueue"
+meta_title: "InQueue - Join the movement starting a lineup once your are on the spot. Find places and their waiting time."
+meta_description: "InQueue allows you to track existing lineups in order to avoid crowded places and long waiting time."
+meta_image: "cover.png" # should exist in `app/assets/images/`
+# twitter_account: "@product_twitter_account"   # required for Twitter Cards

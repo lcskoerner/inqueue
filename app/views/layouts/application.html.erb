@@ -1,7 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>InQueue – Join the movement starting a lineup once your are on the spot. Find places and their waiting time.</title>
+    <title><%= meta_title %></title>
+    <meta name="description" content="<%= meta_description %>">
+
+    <%= favicon_link_tag 'apple-touch-icon.png', sizes: '180x180', rel: 'apple-touch-icon' %>
+    <%= favicon_link_tag 'favicon-32x32.png', sizes: '32x32', rel: 'icon', type: 'image/png' %>
+    <%= favicon_link_tag 'favicon-16x16.png', sizes: '16x16', rel: 'icon', type: 'image/png' %>
+
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Facebook Open Graph data -->
+    <meta property="og:title" content="<%= meta_title %>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<%= request.original_url %>" />
+    <meta property="og:image" content="<%= meta_image %>" />
+    <meta property="og:description" content="<%= meta_description %>" />
+    <meta property="og:site_name" content="<%= meta_title %>" />
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 

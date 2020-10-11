@@ -5,7 +5,7 @@
        <div class="clock-container-1">
         <div class="clock-container-2">
            <div class="clock-container-3">
-              <p class="mb-0"><%= @line.start_date.strftime("Started at %I:%M %p") %></p>
+              <p class="mb-0"><%= @line.start_date.strftime("Started at %l:%M %p") %></p>
               <div data-target="line.place" hidden><%= @place.id %></div>
               <div data-target="line.line" hidden><%= @line.id %></div>
               <div id="clock" data-target="line.clock"><%= image_tag "spin.svg" %></div>
