@@ -4,63 +4,29 @@
   <title>We're sorry, but something went wrong (500)</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
-  .rails-default-error-page {
-    background-color: #EFEFEF;
-    color: #2E2F30;
-    text-align: center;
-    font-family: arial, sans-serif;
-    margin: 0;
-  }
-
-  .rails-default-error-page div.dialog {
-    width: 95%;
-    max-width: 33em;
-    margin: 4em auto 0;
-  }
-
-  .rails-default-error-page div.dialog > div {
-    border: 1px solid #CCC;
-    border-right-color: #999;
-    border-left-color: #999;
-    border-bottom-color: #BBB;
-    border-top: #B00100 solid 4px;
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    background-color: white;
-    padding: 7px 12% 0;
-    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
-  }
-
-  .rails-default-error-page h1 {
-    font-size: 100%;
-    color: #730E15;
-    line-height: 1.5em;
-  }
-
-  .rails-default-error-page div.dialog > p {
-    margin: 0 0 1em;
-    padding: 1em;
-    background-color: #F7F7F7;
-    border: 1px solid #CCC;
-    border-right-color: #999;
-    border-left-color: #999;
-    border-bottom-color: #999;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-color: #DADADA;
-    color: #666;
-    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
-  }
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+    body {
+      background: linear-gradient(180deg, #055682 -8.14%, rgba(79, 177, 235, 0.74) 93.32%);
+      color: white;
+      min-height: 100vh;
+      font-family: "Roboto";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
   </style>
 </head>
 
-<body class="rails-default-error-page">
-  <!-- This file lives in public/500.html -->
-  <div class="dialog">
+<body>
+  <div>
     <div>
+      <svg width="147" height="136" viewBox="0 0 147 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M146.383 51.0676C145.68 48.9648 144.388 47.0905 142.649 45.6522C140.91 44.214 138.792 43.2679 136.53 42.9186L101.033 37.3553L84.5772 6.51768C83.5291 4.55451 81.9404 2.90771 79.9856 1.75797C78.0307 0.608237 75.7853 0 73.4956 0C71.2059 0 68.9604 0.608237 67.0056 1.75797C65.0508 2.90771 63.4621 4.55451 62.4139 6.51768L45.9585 37.3553L10.462 42.9186C8.20209 43.2733 6.08715 44.2215 4.34926 45.6591C2.61136 47.0967 1.31765 48.9682 0.610089 51.0682C-0.0974752 53.1682 -0.191556 55.4156 0.33817 57.5638C0.867895 59.712 2.00096 61.6779 3.61303 63.246L28.9399 87.8679L23.458 122.144C23.1063 124.327 23.3856 126.561 24.2654 128.601C25.1452 130.641 26.5913 132.407 28.4447 133.706C30.2981 135.004 32.487 135.785 34.7706 135.962C37.0542 136.138 39.3441 135.704 41.3883 134.707L73.4956 119.086L105.604 134.707C107.648 135.702 109.937 136.135 112.22 135.957C114.503 135.78 116.691 134.999 118.544 133.701C120.396 132.403 121.842 130.637 122.723 128.598C123.603 126.56 123.884 124.326 123.534 122.144L118.052 87.8679L143.379 63.246C144.996 61.681 146.133 59.715 146.663 57.5656C147.193 55.4162 147.096 53.1672 146.383 51.0676ZM136.421 56.5905L107.612 84.5973L113.848 123.585C113.926 124.052 113.867 124.53 113.68 124.967C113.493 125.404 113.184 125.783 112.787 126.061C112.39 126.339 111.921 126.505 111.433 126.542C110.944 126.579 110.454 126.484 110.017 126.269L73.4956 108.501L36.9734 126.27C36.5369 126.485 36.047 126.579 35.5582 126.543C35.0694 126.506 34.6007 126.339 34.204 126.061C33.8074 125.783 33.4982 125.405 33.3109 124.968C33.1235 124.531 33.0653 124.053 33.1426 123.586L39.3793 84.5973L10.5707 56.5902C10.2267 56.255 9.98496 55.835 9.87201 55.3761C9.75906 54.9172 9.77924 54.4372 9.93036 53.9887C10.0815 53.5401 10.3577 53.1404 10.7287 52.8331C11.0998 52.5259 11.5514 52.3231 12.034 52.2469L52.4103 45.919L71.128 10.8423C71.3518 10.4228 71.6912 10.0708 72.1088 9.82502C72.5265 9.57927 73.0063 9.44926 73.4956 9.44926C73.9849 9.44926 74.4647 9.57927 74.8823 9.82502C75.3 10.0708 75.6394 10.4228 75.8632 10.8423L94.5809 45.919L134.957 52.2469C135.44 52.3231 135.891 52.5259 136.262 52.8331C136.633 53.1404 136.91 53.5401 137.061 53.9887C137.212 54.4372 137.232 54.9172 137.119 55.3761C137.006 55.835 136.764 56.255 136.42 56.5902L136.421 56.5905Z" fill="#F3F8FA"/>
+      </svg>
       <h1>We're sorry, but something went wrong.</h1>
     </div>
-    <p>If you are the application owner check the logs for more information.</p>
+    <h1>:(</h1>
   </div>
 </body>
 </html>
