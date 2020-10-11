@@ -30,8 +30,8 @@
         <% else %>
           <% if @place.lines.last.user == current_user %>
             <%= simple_form_for([@place, @place.lines.last]) do |f| %>
-              <div>
-                <%= @place.lines.last.start_date.strftime("Started at %l:%M %p") %>
+              <div class="mb-1">
+                <small><%= @place.lines.last.start_date.strftime("Started at %l:%M %p") %></small>
               </div>
               <%= f.button :submit, "End line", class: "btn btn-control" %>
             <% end %>
@@ -41,7 +41,7 @@
       <!-- TODO !-->
       <% unless @place.lines.empty? %>
         <hr class="mt-5 mb-2">
-          <div class="d-flex justify-content-center"> 
+          <div class="d-flex justify-content-center">
         <div class="d-flex flex-wrap" style="width: 230px;">
         <p class="text-center mb-0" style="font-size: 80%;">Based on your amazing participation, this is the lineup trend of this location:</p>
         </div>
