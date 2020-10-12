@@ -30,10 +30,12 @@ import "bootstrap";
 import '../components/argon-design-system';
 import '../components/datetimepicker';
 import '../components/bootstrap-switch';
-//import { initPlaceCable } from '../channels/place_channel';
+import "controllers"
 
 document.addEventListener('turbolinks:load', () => {
-  //initPlaceCable();
 });
 
-import "controllers"
+document.addEventListener("turbolinks:before-cache", function() {
+  // Remove all cards
+  document.querySelectorAll(".card").forEach(card => card.remove());
+});
