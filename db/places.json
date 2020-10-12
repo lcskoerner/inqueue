@@ -1,669 +1,987 @@
 {
-  "html_attributions": [],
-  "results": [
-    {
-      "business_status": "OPERATIONAL",
-      "formatted_address": "1500 McGill College Ave, Montreal, Quebec H3A 3J5, Canada",
-      "geometry": {
-        "location": {
-          "lat": 45.5018335,
-          "lng": -73.5716686
-        },
-        "viewport": {
-          "northeast": {
-            "lat": 45.50308642989273,
-            "lng": -73.57019747010727
-          },
-          "southwest": {
-            "lat": 45.50038677010728,
-            "lng": -73.57289712989272
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
-      "name": "Winners",
-      "opening_hours": {
-        "open_now": false
-      },
-      "photos": [
+    "html_attributions": [],
+    "next_page_token": "CoQC8wAAAE3WCzfyRLfiZ1Cn-qtrAM7UAjiLVyzzeY0spXyMkFUJL7VvC_6Sv2HydBvIfV_Ld0MOduUbTDDN2ekNI7iZZJOHzHocbQFqJQyXNTp1PC2RvSQDrS3DItD-LEPPJIEDXblKevJTEhgjMdYAbHK35wk4UEsjLw3zN9IZjB9ZulS9551KzPM3ocdHVcU8nHHlQPT4H4IHVLoxwEXwXeyge1sBj45ZqBMqVzWbFk-WPc8iD1jpAHKVnBHdaRmya5MxWW-N2OdMpz9M_5zjJVprX1hRx_ALir_VfL8zKZBhSdP1Di75CIMAtM5f-XAmqAJfScGbSO8QdmBP0cdXpWEkYq4SEJQIae6jelMnewbmo_DJyCEaFEBOOjQpLXJnWq_Bgf0gaf100jfB",
+    "results": [
         {
-          "height": 2988,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/111816577301356152060\">Daniel Montpetit</a>"
-          ],
-          "photo_reference": "CmRaAAAAW3GBoKjul7SqXfIFSaHzY6LPhTqbf8kvvclF2LLROw_5r3JncLkBQkwow6EjvLNS8L0PJxZYQXTnKAL_QXckylKV2i1nq9Zzsv3woCNNxQ9mpSCci1vBKOLW8S8LIj9wEhADAG0ypvgKCh6DatgTzjPYGhRhRGH7cxwu_gouc6oMJwADIDgf-w",
-          "width": 5312
-        }
-      ],
-      "place_id": "ChIJoYYaHUQayUwRbtZYrxN2OUw",
-      "plus_code": {
-        "compound_code": "GC2H+P8 Montreal, Quebec",
-        "global_code": "87Q8GC2H+P8"
-      },
-      "rating": 4.1,
-      "reference": "ChIJoYYaHUQayUwRbtZYrxN2OUw",
-      "types": [
-        "department_store",
-        "shoe_store",
-        "point_of_interest",
-        "clothing_store",
-        "store",
-        "establishment"
-      ],
-      "user_ratings_total": 1664
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "formatted_address": "1500 Atwater Ave, Montreal, Quebec H3Z 3B8, Canada",
-      "geometry": {
-        "location": {
-          "lat": 45.488643,
-          "lng": -73.58623229999999
+            "business_status": "OPERATIONAL",
+            "formatted_address": "155 Atwater Ave, Montreal, Quebec H3J 2J4, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 45.4804361,
+                    "lng": -73.5767168
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 45.48172902989272,
+                        "lng": -73.57545817010728
+                    },
+                    "southwest": {
+                        "lat": 45.47902937010727,
+                        "lng": -73.57815782989273
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+            "name": "SAQ Sélection",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 5312,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/104846322820080230318\">Francis Carle</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAuD-yDdZsK5Ejty93lQvJC9gDrD0tMbBXyYs3n5XszRHBreE35UDpOXnf2AO37LbzRK_12BgDk44mWUyKE6k-mF4DDUFhMKNl-DB06qs5V_V-J7bJn-lC7ZfrQaTcW0_gEhB_hHzZP6bj7frk5a_wyKZ7GhTkWkiL0t8kr1nTXsfG0V0m5B40pA",
+                    "width": 2988
+                }
+            ],
+            "place_id": "ChIJN5HuWHgayUwR7HJBMU7n-EQ",
+            "plus_code": {
+                "compound_code": "FCJF+58 Montreal, Quebec",
+                "global_code": "87Q8FCJF+58"
+            },
+            "rating": 4.5,
+            "reference": "ChIJN5HuWHgayUwR7HJBMU7n-EQ",
+            "types": [
+                "liquor_store",
+                "point_of_interest",
+                "store",
+                "establishment"
+            ],
+            "user_ratings_total": 774
         },
-        "viewport": {
-          "northeast": {
-            "lat": 45.49004057989272,
-            "lng": -73.58482637010728
-          },
-          "southwest": {
-            "lat": 45.48734092010727,
-            "lng": -73.58752602989273
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
-      "name": "Winners",
-      "opening_hours": {
-        "open_now": false
-      },
-      "photos": [
         {
-          "height": 2988,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/100328502937428467376\">Sina A</a>"
-          ],
-          "photo_reference": "CmRaAAAAdWt89LtEJ-1J7gJlzJZ01y-M7bWHMt6RQMeKa4Y9-eulSOJE8bXu1ID4u_SF1f8v2sbqu6JFEc16U-diThH_NMX3MSyHd8vNJv3K2ZNzHWByYCo2MP-EQobfH7-k9bA_EhBh6jZ5Q4fNrCOSRECtyt9MGhRykPjhczM_jz-CZ7JMD0qHgNl2dA",
-          "width": 5312
-        }
-      ],
-      "place_id": "ChIJh73oYG0ayUwR1o7Y-Hr4vC8",
-      "plus_code": {
-        "compound_code": "FCQ7+FG Montreal, Quebec",
-        "global_code": "87Q8FCQ7+FG"
-      },
-      "rating": 4.2,
-      "reference": "ChIJh73oYG0ayUwR1o7Y-Hr4vC8",
-      "types": [
-        "department_store",
-        "shoe_store",
-        "point_of_interest",
-        "clothing_store",
-        "store",
-        "establishment"
-      ],
-      "user_ratings_total": 1033
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "formatted_address": "225 Peel St, Montreal, Quebec H3C 2G6, Canada",
-      "geometry": {
-        "location": {
-          "lat": 45.4937852,
-          "lng": -73.5583568
+            "business_status": "OPERATIONAL",
+            "formatted_address": "1900 Saint-Patrick St., Montreal, Quebec H3K 1A9, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 45.4842619,
+                    "lng": -73.56450599999999
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 45.48568507989273,
+                        "lng": -73.56324457010729
+                    },
+                    "southwest": {
+                        "lat": 45.48298542010728,
+                        "lng": -73.56594422989272
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+            "name": "SAQ Restauration",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 1920,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/117657843902714904691\">Abdallah Al-Khzouz</a>"
+                    ],
+                    "photo_reference": "CmRZAAAADOSE2acr49OpHrMojkFMliB34Oqi-0bu0o_wZmX25EgghUQy6SMmb7lHjyj2vp2qEOlUHza5SaeHA1dqsOqdzYWqh1gY7fZ5OifeDnG_jorptNV-G7I7zOOOfWwzU8JPEhBFVeJLa5RmYRhnQ5sWiiWQGhRi89TwjzraX12ZFGQ5pO0o_5oIzw",
+                    "width": 1080
+                }
+            ],
+            "place_id": "ChIJFxSYpH8ayUwR5oW6nA5Yq2w",
+            "plus_code": {
+                "compound_code": "FCMP+P5 Montreal, Quebec",
+                "global_code": "87Q8FCMP+P5"
+            },
+            "rating": 4.4,
+            "reference": "ChIJFxSYpH8ayUwR5oW6nA5Yq2w",
+            "types": [
+                "liquor_store",
+                "point_of_interest",
+                "store",
+                "establishment"
+            ],
+            "user_ratings_total": 96
         },
-        "viewport": {
-          "northeast": {
-            "lat": 45.49507332989273,
-            "lng": -73.55705587010728
-          },
-          "southwest": {
-            "lat": 45.49237367010728,
-            "lng": -73.55975552989271
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
-      "name": "Winners",
-      "opening_hours": {
-        "open_now": false
-      },
-      "photos": [
         {
-          "height": 2340,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/104747999224182617169\">Alain Tramblay</a>"
-          ],
-          "photo_reference": "CmRaAAAAtR2Sphp9F43cACepIGJZmCGp9VpilyPPWbCMz-FZyfzhtkVWKZnsNH2x5i7qnglPSwQXb592FRFE0j6G2Yt-VL5ozgaJ8xISZzfBeKd84ZTteTEB_ROKmtci2oOl5ZiAEhBBdUCbpkWPn2hqRTJtyo0BGhTlG7rgoI6yI9jC81AVU-3JxTbj8A",
-          "width": 4160
-        }
-      ],
-      "place_id": "ChIJ2SqfEmAayUwROQ3L0osjeHc",
-      "plus_code": {
-        "compound_code": "FCVR+GM Montreal, Quebec",
-        "global_code": "87Q8FCVR+GM"
-      },
-      "rating": 4.1,
-      "reference": "ChIJ2SqfEmAayUwROQ3L0osjeHc",
-      "types": [
-        "department_store",
-        "shoe_store",
-        "point_of_interest",
-        "clothing_store",
-        "store",
-        "establishment"
-      ],
-      "user_ratings_total": 439
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "formatted_address": "150 Saint-Catherine St W, Montreal, Quebec H2X 3Y2, Canada",
-      "geometry": {
-        "location": {
-          "lat": 45.5081741,
-          "lng": -73.5640056
+            "business_status": "OPERATIONAL",
+            "formatted_address": "2204 Saint-Catherine St, Montreal, Quebec H3H 1M7, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 45.4902154,
+                    "lng": -73.583247
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 45.49160627989272,
+                        "lng": -73.58197077010728
+                    },
+                    "southwest": {
+                        "lat": 45.48890662010728,
+                        "lng": -73.58467042989272
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+            "name": "SAQ",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3456,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/117078240041517107255\">Sylvain Rodrigue</a>"
+                    ],
+                    "photo_reference": "CmRaAAAA3m-smXAn6q0kLQN_kL2XIjHWUGqONf4KIA43LPFoylQcLN-KVkHu_uJ_KHr5RgK6lb_WB6QtsK5ILL6ONRMs_9TtPPA12-IeCXL8sERlJRWnxaHxxGAnC5_eHMU0Q4b8EhAN6FB4yF3rR_EDonRTuxXoGhRnxsy-rDF3qsTrLDuXyP7SXGBTSw",
+                    "width": 4608
+                }
+            ],
+            "place_id": "ChIJp3i4xmsayUwRiGB96gOrFE0",
+            "plus_code": {
+                "compound_code": "FCR8+3P Montreal, Quebec",
+                "global_code": "87Q8FCR8+3P"
+            },
+            "rating": 4.2,
+            "reference": "ChIJp3i4xmsayUwRiGB96gOrFE0",
+            "types": [
+                "liquor_store",
+                "point_of_interest",
+                "store",
+                "establishment"
+            ],
+            "user_ratings_total": 233
         },
-        "viewport": {
-          "northeast": {
-            "lat": 45.50974182989272,
-            "lng": -73.56303132010729
-          },
-          "southwest": {
-            "lat": 45.50704217010728,
-            "lng": -73.56573097989273
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
-      "name": "Winners",
-      "opening_hours": {
-        "open_now": false
-      },
-      "photos": [
         {
-          "height": 3264,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/109537359070841600424\">A Google User</a>"
-          ],
-          "photo_reference": "CmRaAAAA69vtcXmSJnZzMOR7EClW5zLg5pOJpmBaoScrxVFp_fQUTJ1tuKXaf67hsQ8HR3C50JCnHmJXJ92IE0iY58pGUcsmcYUPFYK76FN13qeY_JE7f4hxlMEYafOg8vFiUoR-EhA7-tVxhWIxTr_5dwl-o6_QGhTBUzTUWItyLdhyXX3PZAGc4DJTbA",
-          "width": 2448
-        }
-      ],
-      "place_id": "ChIJ48U7S04ayUwRs4OzEc_JYjU",
-      "plus_code": {
-        "compound_code": "GC5P+79 Montreal, Quebec",
-        "global_code": "87Q8GC5P+79"
-      },
-      "rating": 4,
-      "reference": "ChIJ48U7S04ayUwRs4OzEc_JYjU",
-      "types": [
-        "department_store",
-        "shoe_store",
-        "point_of_interest",
-        "clothing_store",
-        "store",
-        "establishment"
-      ],
-      "user_ratings_total": 771
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "formatted_address": "815 Rue Chabanel O, Montréal, QC H4N 1J8, Canada",
-      "geometry": {
-        "location": {
-          "lat": 45.5358065,
-          "lng": -73.6570215
+            "business_status": "OPERATIONAL",
+            "formatted_address": "1618 Saint-Catherine St W, Montreal, Quebec H3H 2S7, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 45.4942664,
+                    "lng": -73.57841359999999
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 45.49567482989273,
+                        "lng": -73.57716567010726
+                    },
+                    "southwest": {
+                        "lat": 45.49297517010728,
+                        "lng": -73.57986532989271
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+            "name": "SAQ",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 2988,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/117870471454134337510\">José H. Pisani R.</a>"
+                    ],
+                    "photo_reference": "CmRaAAAA9ZtdwRQhwF3z8mTgnmqRoU3VbMDCTJmtGxirYvC2d_jDTCxlVM0yYMgypd42BPq-o3m0Wj_w5gbNHDnZ2svX9GGZ3PbWJgKjJ9gAnriP_Va0Xf41sHcbMCNwA-L-urvFEhAI8W4MzhaXLmySY-2CKDeWGhQS6lg2OooSWD-ZPcWMX4cdAVFbiw",
+                    "width": 5312
+                }
+            ],
+            "place_id": "ChIJp3i4xmsayUwRM1D2vIaN5l8",
+            "plus_code": {
+                "compound_code": "FCVC+PJ Montreal, Quebec",
+                "global_code": "87Q8FCVC+PJ"
+            },
+            "rating": 4.2,
+            "reference": "ChIJp3i4xmsayUwRM1D2vIaN5l8",
+            "types": [
+                "liquor_store",
+                "point_of_interest",
+                "store",
+                "establishment"
+            ],
+            "user_ratings_total": 179
         },
-        "viewport": {
-          "northeast": {
-            "lat": 45.53699177989273,
-            "lng": -73.65554792010728
-          },
-          "southwest": {
-            "lat": 45.53429212010728,
-            "lng": -73.65824757989273
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
-      "name": "Winners",
-      "opening_hours": {
-        "open_now": false
-      },
-      "photos": [
         {
-          "height": 3024,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/104129093714853390004\">Ionut Baban</a>"
-          ],
-          "photo_reference": "CmRaAAAAPQXC8htgFQHVZTiDLQzhGbduXLL__1wE3LPF1uo89bvbMWruKSVwhOsgIlyI1IoghppV9SfzYy4sryIi_0X2KaN6aVjVUMQg97Pbr_V7Mfcs0qnR7ZfFY5bir7kiwRkIEhB-GznocI6rP5WdSpX45dTpGhRRZTJD80epyMwom3WW9rp6_aE8_A",
-          "width": 4032
-        }
-      ],
-      "place_id": "ChIJz30Z5vAYyUwRDOcw50qpf6M",
-      "plus_code": {
-        "compound_code": "G8PV+85 Montreal, Quebec",
-        "global_code": "87Q8G8PV+85"
-      },
-      "rating": 4.1,
-      "reference": "ChIJz30Z5vAYyUwRDOcw50qpf6M",
-      "types": [
-        "department_store",
-        "shoe_store",
-        "point_of_interest",
-        "clothing_store",
-        "store",
-        "establishment"
-      ],
-      "user_ratings_total": 955
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "formatted_address": "4375 Jean Talon Estates, Montreal, Quebec H1S 1J9, Canada",
-      "geometry": {
-        "location": {
-          "lat": 45.5705029,
-          "lng": -73.5901564
+            "business_status": "OPERATIONAL",
+            "formatted_address": "231 Peel St, Montreal, Quebec H3C 2G6, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 45.4939726,
+                    "lng": -73.5587573
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 45.49524807989273,
+                        "lng": -73.55746552010727
+                    },
+                    "southwest": {
+                        "lat": 45.49254842010728,
+                        "lng": -73.56016517989272
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+            "name": "SAQ",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 2030,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/114424240806190813419\">Pui Lam, Eddy Chan</a>"
+                    ],
+                    "photo_reference": "CmRaAAAA08xvYex-40wmXd4MDfrPZdgsx_12b7XODSchTRgjRgb-E4JypdnyTYGiJGUkcTyOclp9UlgvwZxd-qY36lDuv2SQCGdHvladySUVF893XRl85uFrWa3HtzZ75D5Ap2FJEhA2XBLWknq3Q_VkPdPb5cixGhRHS_89FFZ3CAM1e2lhb93oMGbgcQ",
+                    "width": 7882
+                }
+            ],
+            "place_id": "ChIJ67ucbGAayUwRwAuJXv0WcfE",
+            "plus_code": {
+                "compound_code": "FCVR+HF Montreal, Quebec",
+                "global_code": "87Q8FCVR+HF"
+            },
+            "rating": 4.3,
+            "reference": "ChIJ67ucbGAayUwRwAuJXv0WcfE",
+            "types": [
+                "liquor_store",
+                "point_of_interest",
+                "store",
+                "establishment"
+            ],
+            "user_ratings_total": 153
         },
-        "viewport": {
-          "northeast": {
-            "lat": 45.57172137989272,
-            "lng": -73.58853002010729
-          },
-          "southwest": {
-            "lat": 45.56902172010728,
-            "lng": -73.59122967989272
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
-      "name": "Winners",
-      "opening_hours": {
-        "open_now": false
-      },
-      "photos": [
         {
-          "height": 3024,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/103283833543895997855\">fatih anderoglu</a>"
-          ],
-          "photo_reference": "CmRaAAAAwp7COWeYkb2tNvz-DbWd2UemYmLLB86xUdR9nSUoh6UpUnnUQGssiyuLsKMuZ79aO5poqq6BH4-4BRAk2vCJGbryy0KfQuQl_F6tzkQ-ZRElf2ACkgbIBg3jMptLy1o1EhAf37KJXfkNFgV2VA1GlDz2GhRqTHuPkgkaCrx7jbtZZP8wFiJW2g",
-          "width": 4032
-        }
-      ],
-      "place_id": "ChIJQYI9FLkeyUwRel2GbnPbPqI",
-      "plus_code": {
-        "compound_code": "HCC5+6W Montreal, Quebec",
-        "global_code": "87Q8HCC5+6W"
-      },
-      "rating": 4.1,
-      "reference": "ChIJQYI9FLkeyUwRel2GbnPbPqI",
-      "types": [
-        "department_store",
-        "shoe_store",
-        "point_of_interest",
-        "clothing_store",
-        "store",
-        "establishment"
-      ],
-      "user_ratings_total": 593
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "formatted_address": "6900 Decarie Blvd Ste 1400, Côte Saint-Luc, Quebec H3X 2T8, Canada",
-      "geometry": {
-        "location": {
-          "lat": 45.490945,
-          "lng": -73.65075399999999
+            "business_status": "OPERATIONAL",
+            "formatted_address": "1450 Rue de la Montagne, Montréal, QC H3G 1Z3, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 45.498516,
+                    "lng": -73.576718
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 45.49992607989272,
+                        "lng": -73.57530947010729
+                    },
+                    "southwest": {
+                        "lat": 45.49722642010728,
+                        "lng": -73.57800912989272
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+            "name": "SAQ Selection",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 1908,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/108548306296871258216\">Brandon H</a>"
+                    ],
+                    "photo_reference": "CmRaAAAArrdqkG22aHiITja1lbiVxSrM7y4G49df9DAU7_G3W-klpspPevQyqJAsJuXU759ff4Z0hgCHJrR9L094jIZv06NXOqXPilr_m0wDuaPx3Aln22a9yJkWrUvJMXV6gYHXEhAnvfraxR47zbGmaWgUmB3mGhSV_pJB-bimeT2qQgHLrIsCFhqFWw",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJS_yHtaobyUwRfzlaMG-Pgro",
+            "plus_code": {
+                "compound_code": "FCXF+C8 Montreal, Quebec",
+                "global_code": "87Q8FCXF+C8"
+            },
+            "rating": 4.7,
+            "reference": "ChIJS_yHtaobyUwRfzlaMG-Pgro",
+            "types": [
+                "liquor_store",
+                "point_of_interest",
+                "store",
+                "establishment"
+            ],
+            "user_ratings_total": 106
         },
-        "viewport": {
-          "northeast": {
-            "lat": 45.49265062989272,
-            "lng": -73.64900717010728
-          },
-          "southwest": {
-            "lat": 45.48995097010727,
-            "lng": -73.65170682989272
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
-      "name": "Winners",
-      "opening_hours": {
-        "open_now": false
-      },
-      "photos": [
         {
-          "height": 2448,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/117659783931997793562\">Animesh Ghose</a>"
-          ],
-          "photo_reference": "CmRaAAAAtCx1t1RGvWtQA1HEn2kbP_jpOcAN1XZizw7b7lQPkOaw7eOH9uIn-elKsYKyNyR6B9MACKiohno6yBPQ1IpHCRxPL88umUkHGwq9py_t_LepdlozNd3i65TZJEu3GkEDEhAulyxYhhorWMz8cS0zQDyuGhRk69bQxVbJ64o_HfIFLV6QWNVbCw",
-          "width": 3264
-        }
-      ],
-      "place_id": "ChIJ5x1iDtkZyUwR78odsNEC2JU",
-      "plus_code": {
-        "compound_code": "F8RX+9M Côte Saint-Luc, Quebec",
-        "global_code": "87Q8F8RX+9M"
-      },
-      "rating": 4.1,
-      "reference": "ChIJ5x1iDtkZyUwR78odsNEC2JU",
-      "types": [
-        "department_store",
-        "shoe_store",
-        "point_of_interest",
-        "clothing_store",
-        "store",
-        "establishment"
-      ],
-      "user_ratings_total": 512
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "formatted_address": "6136 Boul Henri-Bourassa E, Montréal, QC H1G 5X3, Canada",
-      "geometry": {
-        "location": {
-          "lat": 45.6069792,
-          "lng": -73.61443899999999
+            "business_status": "OPERATIONAL",
+            "formatted_address": "1176 Saint-Catherine St W, Montreal, Quebec H3B 1K1, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 45.4990586,
+                    "lng": -73.5736058
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 45.50044182989272,
+                        "lng": -73.57236077010727
+                    },
+                    "southwest": {
+                        "lat": 45.49774217010727,
+                        "lng": -73.57506042989272
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+            "name": "SAQ Express",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 4032,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/109226882854540505232\">Hyeonkyeong Ha</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAWC8FiQFQSBxRQdJ4pEjSzBAF8L8RSmmpu4qhFJA_5NP0ozBI0r_Zb0znML8UKr5KQM8G4G-c99s9FTBZtUiIf5D7xj-hpMJGx-nQzg50CWyhSTrCGWFe4O6r2O3X7S-3EhA6jZyaxvC0Dcw_H58iEwZyGhSfHDVgOBAYEVtMVjKF5oTX0hA37g",
+                    "width": 3024
+                }
+            ],
+            "place_id": "ChIJkW7sz0MayUwRRpEvzyqnfqk",
+            "plus_code": {
+                "compound_code": "FCXG+JH Montreal, Quebec",
+                "global_code": "87Q8FCXG+JH"
+            },
+            "rating": 4.2,
+            "reference": "ChIJkW7sz0MayUwRRpEvzyqnfqk",
+            "types": [
+                "liquor_store",
+                "point_of_interest",
+                "store",
+                "establishment"
+            ],
+            "user_ratings_total": 799
         },
-        "viewport": {
-          "northeast": {
-            "lat": 45.60835857989272,
-            "lng": -73.61303407010728
-          },
-          "southwest": {
-            "lat": 45.60565892010727,
-            "lng": -73.61573372989272
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
-      "name": "Winners",
-      "opening_hours": {
-        "open_now": false
-      },
-      "photos": [
         {
-          "height": 3018,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/107835085327268012709\">A Google User</a>"
-          ],
-          "photo_reference": "CmRaAAAAzEZ-cKD0uQr0HpHd0gx-3N3TWqwknuTFMThKAE_8PI4LbVfk_cp2-KvYqjfl8s90PVmv_2YCKj81YHgpKaV49vy70QHq6rJy911r1A3xqOlElPKiFlY1a_YlePc0m746EhAQQoqT6s8lKBnvloNaaeEYGhR3GkFhbGC0rUWZINWJU6vMFyO-rQ",
-          "width": 3018
-        }
-      ],
-      "place_id": "ChIJo7-tkqQfyUwRaGhm7hUxUoA",
-      "plus_code": {
-        "compound_code": "J94P+Q6 Montreal, Quebec",
-        "global_code": "87Q8J94P+Q6"
-      },
-      "rating": 4.2,
-      "reference": "ChIJo7-tkqQfyUwRaGhm7hUxUoA",
-      "types": [
-        "department_store",
-        "shoe_store",
-        "point_of_interest",
-        "clothing_store",
-        "store",
-        "establishment"
-      ],
-      "user_ratings_total": 493
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "formatted_address": "2101 Dollard Ave, Lasalle, Quebec H8N 1S2, Canada",
-      "geometry": {
-        "location": {
-          "lat": 45.4325673,
-          "lng": -73.63403169999999
+            "business_status": "OPERATIONAL",
+            "formatted_address": "895 Rue De La Gauchetière O Local 410, Montréal, QC H3B 4G1, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 45.5001121,
+                    "lng": -73.5665224
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 45.50135057989272,
+                        "lng": -73.56488652010728
+                    },
+                    "southwest": {
+                        "lat": 45.49865092010727,
+                        "lng": -73.56758617989271
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+            "name": "SAQ",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 4032,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/102661859901132538079\">Jennifer Kim</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAMUEiXNjTD04MlvT6BaUSPq4jNgTY0ZxYJO5A6MJxa0pZgS4julnt_SZItZL2HdDlx3XREfL2jRL9gBp2rMXH0kuDnC5yRcVmmxcS8SlMoJyBuKm5YBpmQvrpPVh6YBVcEhCfgPRKLnPNRpg2GGXoxhf5GhTdyJDSnUcYTe_rOjFT1SaETq9PUg",
+                    "width": 2268
+                }
+            ],
+            "place_id": "ChIJH9C8sFwayUwRByAZ_wZMqkM",
+            "plus_code": {
+                "compound_code": "GC2M+29 Montreal, Quebec",
+                "global_code": "87Q8GC2M+29"
+            },
+            "rating": 4.2,
+            "reference": "ChIJH9C8sFwayUwRByAZ_wZMqkM",
+            "types": [
+                "liquor_store",
+                "point_of_interest",
+                "store",
+                "establishment"
+            ],
+            "user_ratings_total": 108
         },
-        "viewport": {
-          "northeast": {
-            "lat": 45.43366632989272,
-            "lng": -73.63257807010727
-          },
-          "southwest": {
-            "lat": 45.43096667010727,
-            "lng": -73.63527772989272
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
-      "name": "Winners",
-      "opening_hours": {
-        "open_now": false
-      },
-      "photos": [
         {
-          "height": 2988,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/100328502937428467376\">Sina A</a>"
-          ],
-          "photo_reference": "CmRaAAAAog6aYVz662EOVhDtl-klWvs4r4nBDHrYquMqGXUksBClWOnmDf55XPjRmPtpqTGeeyC2lxSAicsOvsaV2SnwjLOlcfxBWREPT6NUdFrixPK2BgdHkLaQVPm0wkME_3UREhDw3xwMjFz7hgxzlxIP_TzsGhQEnhCwpTh1ZwZ8YCuUMTpc7a_DGA",
-          "width": 5312
-        }
-      ],
-      "place_id": "ChIJUT7uRTcRyUwR4aaHzOn_RSY",
-      "plus_code": {
-        "compound_code": "C9M8+29 Lasalle, Montreal, Quebec",
-        "global_code": "87Q8C9M8+29"
-      },
-      "rating": 3.9,
-      "reference": "ChIJUT7uRTcRyUwR4aaHzOn_RSY",
-      "types": [
-        "department_store",
-        "shoe_store",
-        "point_of_interest",
-        "clothing_store",
-        "store",
-        "establishment"
-      ],
-      "user_ratings_total": 865
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "formatted_address": "3131 Blvd. Cote-Vertu Ouest, Saint-Laurent, Quebec H4R 1Y5, Canada",
-      "geometry": {
-        "location": {
-          "lat": 45.4985888,
-          "lng": -73.7081443
+            "business_status": "OPERATIONAL",
+            "formatted_address": "677 Saint-Catherine St W, Montreal, Quebec H3B 5K4, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 45.5028465,
+                    "lng": -73.570458
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 45.50420542989273,
+                        "lng": -73.56898047010726
+                    },
+                    "southwest": {
+                        "lat": 45.50150577010728,
+                        "lng": -73.57168012989271
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+            "name": "SAQ",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 4032,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/107241413997338247710\">Jennifer Kwan</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAEfovetIbnde1rQqXb4qB_FwIjhQjTAc9SmIvBR7uCNNocUiqWeJ0Szq8UuyfjWG05kmxEBJajxCTk9ypbCLeYdYZM_-5NI3o3Qq2I_Ba-RNO1Pt5iImde08frj1v7CfiEhAn25st39uCeHNsHQ4oGNU7GhQyh3o4kaK0s74rjVCNYSxV9dBPCQ",
+                    "width": 3024
+                }
+            ],
+            "place_id": "ChIJq6qqI0QayUwR4AiY3f1lEYE",
+            "plus_code": {
+                "compound_code": "GC3H+4R Montreal, Quebec",
+                "global_code": "87Q8GC3H+4R"
+            },
+            "rating": 4.2,
+            "reference": "ChIJq6qqI0QayUwR4AiY3f1lEYE",
+            "types": [
+                "liquor_store",
+                "point_of_interest",
+                "store",
+                "establishment"
+            ],
+            "user_ratings_total": 349
         },
-        "viewport": {
-          "northeast": {
-            "lat": 45.49979887989272,
-            "lng": -73.70667707010728
-          },
-          "southwest": {
-            "lat": 45.49709922010728,
-            "lng": -73.70937672989271
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
-      "name": "Winners",
-      "opening_hours": {
-        "open_now": false
-      },
-      "photos": [
         {
-          "height": 4608,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/114503919380903200117\">Son Ngo Lam</a>"
-          ],
-          "photo_reference": "CmRZAAAAl0KfZj1vA81QAgKBbO5dk05gpzmzowNvQH4UhycHa_nQnZXJwvs7z5EHqRpbA2W2LJJ0z2kFfyWn774d-YhaOT8xAgO6pXE5lzXtPiZSn7V7_voefWe0fKcNEgX8fPAAEhB9yEW-8-za6AM2f8ECl3d5GhRF0eA2QtBcO7G5Rf8aThIDFhhJmQ",
-          "width": 2592
-        }
-      ],
-      "place_id": "ChIJYW5ymAIYyUwRDrY24BYVxSo",
-      "plus_code": {
-        "compound_code": "F7XR+CP Saint-Laurent, Montreal, Quebec",
-        "global_code": "87Q8F7XR+CP"
-      },
-      "rating": 4,
-      "reference": "ChIJYW5ymAIYyUwRDrY24BYVxSo",
-      "types": [
-        "department_store",
-        "shoe_store",
-        "point_of_interest",
-        "clothing_store",
-        "store",
-        "establishment"
-      ],
-      "user_ratings_total": 313
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "formatted_address": "7999 Boulevard des Galeries d'Anjou, Anjou, QC H1M 1W9, Canada",
-      "geometry": {
-        "location": {
-          "lat": 45.6008215,
-          "lng": -73.56238929999999
+            "business_status": "OPERATIONAL",
+            "formatted_address": "501 Place d'Armes, Montreal, Quebec H2Y 2W7, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 45.5050654,
+                    "lng": -73.5567775
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 45.50633927989273,
+                        "lng": -73.55535572010729
+                    },
+                    "southwest": {
+                        "lat": 45.50363962010728,
+                        "lng": -73.55805537989272
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+            "name": "SAQ",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3264,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/109537359070841600424\">A Google User</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAq6-5atCDTUvenRpAfnfgsXCcWJUx6bYkD0v2VF5WznTK5qFeceY8WgIT0LdBW_txgoPyY_Ka4E9SDMFuczwsuLU8gsm5FcIfkV37yu1TVKEREoljsFQfOvXBYihMmQFnEhAvyU5US02VKf1IjsmZdby8GhSRIPGRMIIsEI8CwTugDqEDe6D7Mw",
+                    "width": 2448
+                }
+            ],
+            "place_id": "ChIJy-EpU1cayUwR3uMRVx07Ag4",
+            "plus_code": {
+                "compound_code": "GC4V+27 Montreal, Quebec",
+                "global_code": "87Q8GC4V+27"
+            },
+            "rating": 4.1,
+            "reference": "ChIJy-EpU1cayUwR3uMRVx07Ag4",
+            "types": [
+                "liquor_store",
+                "point_of_interest",
+                "store",
+                "establishment"
+            ],
+            "user_ratings_total": 149
         },
-        "viewport": {
-          "northeast": {
-            "lat": 45.60199882989271,
-            "lng": -73.56140977010728
-          },
-          "southwest": {
-            "lat": 45.59929917010727,
-            "lng": -73.56410942989272
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
-      "name": "Winners",
-      "opening_hours": {
-        "open_now": false
-      },
-      "photos": [
         {
-          "height": 2988,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/103632822275794632021\">Khalid Hamdi</a>"
-          ],
-          "photo_reference": "CmRaAAAAfpqWGo4fjVfFeEx1i9hh8pwp9En2pTNOW8Ytsrl2TBNyFcEw0tIClejhoWUeN0KGlni8vMzA174a25YVtZpaWm-xCMQ0BVJ81DJsZS_jYNmI4W_P71en8kvOIzYbVpoYEhD7yqtX2_lZTO2Fd1HmqFOgGhS-YnlXP5lJUAVVX9LI3BJhl945AA",
-          "width": 5312
-        }
-      ],
-      "place_id": "ChIJ0fSBCWUeyUwRpHabjRwWTL4",
-      "plus_code": {
-        "compound_code": "JC2Q+82 Anjou, Montreal, Quebec",
-        "global_code": "87Q8JC2Q+82"
-      },
-      "rating": 4,
-      "reference": "ChIJ0fSBCWUeyUwRpHabjRwWTL4",
-      "types": [
-        "department_store",
-        "shoe_store",
-        "point_of_interest",
-        "clothing_store",
-        "store",
-        "establishment"
-      ],
-      "user_ratings_total": 742
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "formatted_address": "7275 Rue Sherbrooke Estates #2000, Montreal, Quebec H1N 1E9, Canada",
-      "geometry": {
-        "location": {
-          "lat": 45.5928313,
-          "lng": -73.5440284
+            "business_status": "OPERATIONAL",
+            "formatted_address": "4833 Sherbrooke St W, Westmount, Quebec H3Z 1G6, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 45.479451,
+                    "lng": -73.603385
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 45.48071922989273,
+                        "lng": -73.60189362010728
+                    },
+                    "southwest": {
+                        "lat": 45.47801957010729,
+                        "lng": -73.60459327989273
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+            "name": "SAQ Sélection",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 4624,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/108867398886812109487\">SuperDuperDanny02</a>"
+                    ],
+                    "photo_reference": "CmRaAAAA_OJIObX6Aivcu965vh6I9lfVLYjuZ8CKeX4FxbzUUwhxNeZ2YION1scjlxiVW-gKsx6V5tyWJYzdO8qZOJb8zeMF7j5E3g4hCWaJpGs4NxjWJQ8dQ3ar5aSTviOfn9VEEhDY64I8cCk8gT6PkGexR71tGhRoD9oTgXccr3emnr68MM0p27asDg",
+                    "width": 3468
+                }
+            ],
+            "place_id": "ChIJyQIwVKYQyUwRakWD2A2gXBo",
+            "plus_code": {
+                "compound_code": "F9HW+QJ Westmount, Quebec",
+                "global_code": "87Q8F9HW+QJ"
+            },
+            "rating": 4.3,
+            "reference": "ChIJyQIwVKYQyUwRakWD2A2gXBo",
+            "types": [
+                "liquor_store",
+                "point_of_interest",
+                "store",
+                "establishment"
+            ],
+            "user_ratings_total": 206
         },
-        "viewport": {
-          "northeast": {
-            "lat": 45.59425232989272,
-            "lng": -73.54291157010728
-          },
-          "southwest": {
-            "lat": 45.59155267010728,
-            "lng": -73.54561122989273
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
-      "name": "HomeSense",
-      "opening_hours": {
-        "open_now": false
-      },
-      "photos": [
         {
-          "height": 2160,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/114294316769693025531\">Reinier Meyer</a>"
-          ],
-          "photo_reference": "CmRaAAAAswkjVBHZmSTMPkg6ufY9d-4iPTcp5QuJGHFj0izq8H-PgmjncAwfbAR4PD3ZGgnfQHOzD3n8CjOVyg_IaVkso7622k8w5uQezGfbY5zERTQBDJlVryFzUR43k4wwRPRREhDPYvij4YRAUiH0GX4fq7zcGhTN-p1L0LG9lyZTzvyvGmr0wiIJmg",
-          "width": 3840
-        }
-      ],
-      "place_id": "ChIJ2waZFs0dyUwRhUw52B0Ojjg",
-      "plus_code": {
-        "compound_code": "HFV4+49 Montreal, Quebec",
-        "global_code": "87Q8HFV4+49"
-      },
-      "rating": 4.2,
-      "reference": "ChIJ2waZFs0dyUwRhUw52B0Ojjg",
-      "types": [
-        "department_store",
-        "furniture_store",
-        "home_goods_store",
-        "point_of_interest",
-        "store",
-        "establishment"
-      ],
-      "user_ratings_total": 741
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "formatted_address": "1310 Boulevard Le Corbusier, Laval, Quebec H7N 0A7, Canada",
-      "geometry": {
-        "location": {
-          "lat": 45.5579409,
-          "lng": -73.72674289999999
+            "business_status": "OPERATIONAL",
+            "formatted_address": "440 Boulevard de Maisonneuve O, Montréal, QC H3A 3K5, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 45.5060371,
+                    "lng": -73.56973239999999
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 45.50743092989273,
+                        "lng": -73.56847697010727
+                    },
+                    "southwest": {
+                        "lat": 45.50473127010729,
+                        "lng": -73.57117662989272
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+            "name": "SAQ Sélection",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 4048,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/112679296143613486474\">Thomas Sawaya</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAmHf2ogzxH-GfJG01U9Y2Q1Jem5PL5nRgnspGtQw9fF5b8LZeQtzknui6PjJEK3WQnZ4517ZZHJVwtDfgZllb5Yz9c5MTeU_vU2jXCmu3ko2Bx7vKgNIPPzE6VWB1wWcvEhAe60kWY8cI98y8TlJQEaCVGhRgYItBd9l5GAqXbD08m_w9xC9fAg",
+                    "width": 3036
+                }
+            ],
+            "place_id": "ChIJ84c6_EUayUwRCSUM8GINat0",
+            "plus_code": {
+                "compound_code": "GC4J+C4 Montreal, Quebec",
+                "global_code": "87Q8GC4J+C4"
+            },
+            "rating": 4.5,
+            "reference": "ChIJ84c6_EUayUwRCSUM8GINat0",
+            "types": [
+                "liquor_store",
+                "point_of_interest",
+                "store",
+                "establishment"
+            ],
+            "user_ratings_total": 449
         },
-        "viewport": {
-          "northeast": {
-            "lat": 45.55936777989272,
-            "lng": -73.72523787010728
-          },
-          "southwest": {
-            "lat": 45.55666812010728,
-            "lng": -73.72793752989271
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
-      "name": "Winners",
-      "opening_hours": {
-        "open_now": false
-      },
-      "photos": [
         {
-          "height": 3024,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/105450022982906508221\">A Google User</a>"
-          ],
-          "photo_reference": "CmRaAAAA0F7RTiBOZxSDI_ZaTM1PsyBEBRbPsEaf_jkoWY8h6fsa0EwQ6_1SRXhw9o5hsRxvLdoQUT24wuiJK8CqmKf2_3Lm0PEtlLZWNWQWsEQcxdDDkxik3EolaYYvh6sNbfTTEhANEfqUxeZClh27xIt8l5mIGhRyip__msBHV05lDeso-vexjuYYMQ",
-          "width": 4032
+            "business_status": "OPERATIONAL",
+            "formatted_address": "150 Saint-Catherine St W, Montreal, Quebec H5B 1B5, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 45.5075705,
+                    "lng": -73.564508
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 45.50915397989272,
+                        "lng": -73.56360942010728
+                    },
+                    "southwest": {
+                        "lat": 45.50645432010728,
+                        "lng": -73.56630907989272
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+            "name": "SAQ",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3024,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/104909708915791999202\">Hk Zhou</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAqAXuybD_A97LkiOtLOMYAzXm-oWazFncKQ26q4pfd0ghKJXhYAM9GzFfRSodwLgZFxooyRj487qOayLNF979fBq-BvgRhoN_pU5OzzUh7RvEsrci29JNpIY7pBpEKe_EEhCzCKCMqbsw3tz2vJtHp900GhR_RXmRx0bK6M0v8qI_ytJvzkhLWA",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJM-kayk8ayUwRmrw3kal-mM0",
+            "plus_code": {
+                "compound_code": "GC5P+25 Montreal, Quebec",
+                "global_code": "87Q8GC5P+25"
+            },
+            "rating": 4.2,
+            "reference": "ChIJM-kayk8ayUwRmrw3kal-mM0",
+            "types": [
+                "liquor_store",
+                "point_of_interest",
+                "store",
+                "establishment"
+            ],
+            "user_ratings_total": 206
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "4215 Wellington St, Verdun, Quebec H4G 1V9, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 45.4616173,
+                    "lng": -73.5672429
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 45.46296437989272,
+                        "lng": -73.56583312010727
+                    },
+                    "southwest": {
+                        "lat": 45.46026472010728,
+                        "lng": -73.56853277989272
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+            "name": "SAQ",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3120,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/108067726806187598484\">Daniel Kenji Toyama</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAnz9TJ9Zmt7--oZYG1eCz__Sr3Y_KBFOpTVrkCn1SyYXXUK1KwLxc6mVZvnWKN1NEwel6bWDvZNoqdSRNLTDUmZLib99hxBvACLSJi54AYZoFj0QLEEpSxKjEHRhlvTsVEhBidMg-7PnNkuXBYHX3fQ_aGhS6e-MAQ8M5DSZxzQvvVH37_E9cIA",
+                    "width": 4160
+                }
+            ],
+            "place_id": "ChIJU9W0mmYQyUwRk1fRuKpwj90",
+            "plus_code": {
+                "compound_code": "FC6M+J4 Verdun, Montreal, Quebec",
+                "global_code": "87Q8FC6M+J4"
+            },
+            "rating": 4.1,
+            "reference": "ChIJU9W0mmYQyUwRk1fRuKpwj90",
+            "types": [
+                "liquor_store",
+                "point_of_interest",
+                "store",
+                "establishment"
+            ],
+            "user_ratings_total": 365
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "3575 Park Ave, Montreal, Quebec H2X 3P9, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 45.51033340000001,
+                    "lng": -73.57502219999999
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 45.51160972989272,
+                        "lng": -73.57374237010727
+                    },
+                    "southwest": {
+                        "lat": 45.50891007010728,
+                        "lng": -73.57644202989272
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+            "name": "SAQ",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 2988,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/100328502937428467376\">Sina A</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAQwMgLslwolDPZVFN4q4Ci06dSKOb4u18inSfsWCye8AfN1YUY5getrcVZSGwPE9-qp2ihvHxZgYudwH6nEV6tmqBtEyWVhRULsiRXsU7hj-e58gY3vm1ozTlmuPPfVaKEhCwzuQDz1BYwsNpybBN-wRYGhQRK8hPMj998qXb_LyTm648IMlH1A",
+                    "width": 5312
+                }
+            ],
+            "place_id": "ChIJUWGqIzYayUwRDBpF7jn6PHA",
+            "plus_code": {
+                "compound_code": "GC6F+4X Montreal, Quebec",
+                "global_code": "87Q8GC6F+4X"
+            },
+            "rating": 4,
+            "reference": "ChIJUWGqIzYayUwRDBpF7jn6PHA",
+            "types": [
+                "liquor_store",
+                "point_of_interest",
+                "store",
+                "establishment"
+            ],
+            "user_ratings_total": 61
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "44 Place du Commerce, Verdun, QC H3E 1J5, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 45.4670625,
+                    "lng": -73.54433779999999
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 45.46846372989272,
+                        "lng": -73.54297857010728
+                    },
+                    "southwest": {
+                        "lat": 45.46576407010728,
+                        "lng": -73.54567822989272
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+            "name": "SAQ Sélection",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 4096,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/103969102713855380160\">Javier Sanchez</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAR0UAILTTa0tcc80vUEsl4pnARGx5E-cdxBlKEc1jbgjJ3avph75wDnVNs99i6FQmhY6YwTQXlI42H8LmyMqXbBVAzfljTRZfG-zKsdhivhcPT6yxyECwK-RHI__uSVEPEhBFfkwag_lCs9pSHPCdAHw0GhSbCC4qYF9ep0442NnPAajDEC3lUQ",
+                    "width": 2304
+                }
+            ],
+            "place_id": "ChIJO-5nUgkQyUwRMDnAB5_lM88",
+            "plus_code": {
+                "compound_code": "FF84+R7 Verdun, Montreal, Quebec",
+                "global_code": "87Q8FF84+R7"
+            },
+            "rating": 4.5,
+            "reference": "ChIJO-5nUgkQyUwRMDnAB5_lM88",
+            "types": [
+                "liquor_store",
+                "point_of_interest",
+                "store",
+                "establishment"
+            ],
+            "user_ratings_total": 147
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "3730 St Laurent Blvd, Montreal, Quebec H2X 2V8, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 45.5149205,
+                    "lng": -73.5750759
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 45.51631522989271,
+                        "lng": -73.57368672010728
+                    },
+                    "southwest": {
+                        "lat": 45.51361557010727,
+                        "lng": -73.57638637989271
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+            "name": "SAQ",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3120,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/102591920577692288246\">Julien Paquier-Galliard</a>"
+                    ],
+                    "photo_reference": "CmRaAAAApgL6ErZbS5SzCLoEKW4pBWtsWodRhrV1rYQdPyvCxDzXgNm1p3yMEqnjpKY6scXrLEcKi8RaG3xP02ZZBShkmZGVne-QREAzjL1s2kgDx0x1H9WtcFjNr-2obZ7-XPq-EhBS69ndqzFdU7kx6kMXGjYoGhQbgl6Y67KR_iVAbgh9vfk5CNTywA",
+                    "width": 4160
+                }
+            ],
+            "place_id": "ChIJx6TlGjUayUwR1kEZMtrtKk4",
+            "plus_code": {
+                "compound_code": "GC7F+XX Montreal, Quebec",
+                "global_code": "87Q8GC7F+XX"
+            },
+            "rating": 4.3,
+            "reference": "ChIJx6TlGjUayUwR1kEZMtrtKk4",
+            "types": [
+                "liquor_store",
+                "point_of_interest",
+                "store",
+                "establishment"
+            ],
+            "user_ratings_total": 236
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "865 St Catherine St E, Montreal, Quebec H2L 0E3, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 45.5163429,
+                    "lng": -73.5582771
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 45.51766097989272,
+                        "lng": -73.55685352010728
+                    },
+                    "southwest": {
+                        "lat": 45.51496132010728,
+                        "lng": -73.55955317989273
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+            "name": "SAQ Express",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 2684,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/112396793824592521180\">Normand Venne</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAbvEvMU2KOR1EjzSnZ_wSR_rFqF2ikpFpC2vQDdcN0iBH-4tCBSifXVNYSiniha0FFG3Ll8t8V9EYcNTuLKHSoSHvBfZiFP5yLbaVA0RN_TPnmh2ba9LR13DocjHYElnvEhBcvlh-dbpMIj86VmO49-vnGhQrmGiqeOn__TFpUYLxWhzCaY1zzg",
+                    "width": 3254
+                }
+            ],
+            "place_id": "ChIJuWmWhrIbyUwRo-j1jrpsCxU",
+            "plus_code": {
+                "compound_code": "GC8R+GM Montreal, Quebec",
+                "global_code": "87Q8GC8R+GM"
+            },
+            "rating": 4.2,
+            "reference": "ChIJuWmWhrIbyUwRo-j1jrpsCxU",
+            "types": [
+                "liquor_store",
+                "point_of_interest",
+                "store",
+                "establishment"
+            ],
+            "user_ratings_total": 362
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "5252 Côte-des-Neiges Rd, Montreal, Quebec H3T 1X8, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 45.4957402,
+                    "lng": -73.6213135
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 45.49714612989272,
+                        "lng": -73.61991097010727
+                    },
+                    "southwest": {
+                        "lat": 45.49444647010728,
+                        "lng": -73.62261062989272
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+            "name": "SAQ",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3672,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/114118451392288609524\">Pako Valera</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAlrHNRLPArFZ-x1vmSMq9UbgUhJYrxpxbdv9Z2gTx7YNolefLknpa1odHgzI7I7xPPdNzTaIRiY3PORdX4FTZQxy0Wiz4Q4njoBG60xlqqSSPlic7iJ9uFHvIftorIK2lEhByODlteHL80WYZAj0ws0cxGhQcnJFmyB8Z3ItTRRpU8NIWJNTDJQ",
+                    "width": 4896
+                }
+            ],
+            "place_id": "ChIJu0UHQfAZyUwRARnWJqljcww",
+            "plus_code": {
+                "compound_code": "F9WH+7F Montreal, Quebec",
+                "global_code": "87Q8F9WH+7F"
+            },
+            "rating": 4.4,
+            "reference": "ChIJu0UHQfAZyUwRARnWJqljcww",
+            "types": [
+                "liquor_store",
+                "point_of_interest",
+                "store",
+                "establishment"
+            ],
+            "user_ratings_total": 348
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "1250 St Catherine St E, Montreal, Quebec H2L 2H2, Canada",
+            "geometry": {
+                "location": {
+                    "lat": 45.5188272,
+                    "lng": -73.5556313
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 45.52021287989272,
+                        "lng": -73.55436072010728
+                    },
+                    "southwest": {
+                        "lat": 45.51751322010728,
+                        "lng": -73.55706037989272
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+            "name": "SAQ",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 2880,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/115128948025792065239\">David Marmen</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAS9_O1Mr2jc6T2QpqeCPkMaQ73m6NmHrP91shWa0o933SUm1Q3RUGxkU4qQnYuE8-oSxVcCYqS4vFkUo_CERUEv5lHV3ZaUigqKbLPiW0_-_VkO0LG9w_5DDAvhWwpPgKEhBKA5QaZBA3ly1AQwrsiT-oGhS6jlzHHccpO-CUII6eALWMo9WlCQ",
+                    "width": 2160
+                }
+            ],
+            "place_id": "ChIJJ7D9A64byUwR9vX2RKlESVw",
+            "plus_code": {
+                "compound_code": "GC9V+GP Montreal, Quebec",
+                "global_code": "87Q8GC9V+GP"
+            },
+            "rating": 4.3,
+            "reference": "ChIJJ7D9A64byUwR9vX2RKlESVw",
+            "types": [
+                "liquor_store",
+                "point_of_interest",
+                "store",
+                "establishment"
+            ],
+            "user_ratings_total": 206
         }
-      ],
-      "place_id": "ChIJrxWkyzUiyUwR7Hn04WY1FJ4",
-      "plus_code": {
-        "compound_code": "H75F+58 Laval, Quebec",
-        "global_code": "87Q8H75F+58"
-      },
-      "rating": 4.1,
-      "reference": "ChIJrxWkyzUiyUwR7Hn04WY1FJ4",
-      "types": [
-        "department_store",
-        "shoe_store",
-        "point_of_interest",
-        "clothing_store",
-        "store",
-        "establishment"
-      ],
-      "user_ratings_total": 729
-    }
-  ],
-  "status": "OK"
+    ],
+    "status": "OK"
 }

@@ -5,6 +5,7 @@ class PlacesController < ApplicationController
     fields = 'name,formatted_address,geometry,place_id,rating,formatted_phone_number,business_status,price_level,vicinity,types'
     url = 'https://maps.googleapis.com/maps/api/place/details/json?'
     resp = Faraday.get(url, { place_id: google_place_id, fields: fields, key: ENV['GOOGLE_API_KEY'] }, { 'Accept' => 'application/json' })
+    puts resp
     place = JSON.parse(resp.body)['result']
     @place = Place.find_or_initialize_by(google_place_id: place['place_id'])
     if @place.new_record?
