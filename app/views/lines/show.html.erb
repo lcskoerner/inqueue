@@ -1,4 +1,7 @@
 <div class="container mt-5">
+  <div class="container-logo-stars">
+    <%= render  'shared/5_stars_logo' %>
+  </div>
   <% if @line.active %>
     <% if @line.user == current_user %>
       <div class="clock-container" data-controller="line">
