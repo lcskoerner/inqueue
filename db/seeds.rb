@@ -1,6 +1,13 @@
 require 'json'
 require 'open-uri'
 
+Line.destroy_all
+puts "Cleaning the lines"
+Place.destroy_all
+puts "Cleaning the places"
+User.destroy_all
+puts "Cleaning the users"
+
 def seed_place_information(place_id)
   fields = 'name,formatted_address,geometry,place_id,rating,formatted_phone_number,business_status,price_level,vicinity,types'
   endpoint = 'https://maps.googleapis.com/maps/api/place/details/json?'
