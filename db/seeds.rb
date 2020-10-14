@@ -61,7 +61,7 @@ end
 seed_places = places.slice(1,10)
 
 seed_places.each do |place|
-  line = seed_line_information(place, [rand(5..10),rand(16..25),rand(30..45)].sample, user)
+  line = seed_line_information(place, [rand(16..25), rand(30..45)].sample, user)
   line.save!
   place.last_line = ((line.end_date - line.start_date) / 60).to_i
   place.save!
@@ -70,4 +70,3 @@ seed_places.each do |place|
 end
 
 puts "seed finished!"
-
