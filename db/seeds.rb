@@ -58,9 +58,7 @@ json_places.each do |p|
   puts "place #{place.id} – #{place.name} created!"
 end
 
-seed_places = places.slice(1,10)
-
-seed_places.each do |place|
+places.each do |place|
   line = seed_line_information(place, [rand(16..25), rand(30..45)].sample, user)
   line.save!
   place.last_line = ((line.end_date - line.start_date) / 60).to_i
