@@ -47,23 +47,17 @@ user.save!
 
 filepath = 'db/places.json'
 serialized_places = File.read(filepath)
-json_places = JSON.parse(serialized_places)['results']
-places = []
+places = JSON.parse(serialized_places)['results']
 
-json_places.each do |p|
+places.each do |p|
   place_id = p['place_id']
   place = seed_place_information(place_id)
-  place.save!
-  places << place
-  puts "place #{place.id} – #{place.name} created!"
-end
-
-places.each do |place|
-  line = seed_line_information(place, [rand(16..25), rand(30..45)].sample, user)
+  line = seed_line_information(place, rand(25..45), user)
   line.save!
   place.last_line = ((line.end_date - line.start_date) / 60).to_i
   place.save!
 
+  puts "place #{place.id} – #{place.name} – #{place.address} created!"
   puts "#{place.name} – last line: #{place.last_line} min"
 end
 
