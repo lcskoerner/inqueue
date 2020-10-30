@@ -4,7 +4,7 @@ class PlacesController < ApplicationController
     distance = params[:distance]
     fields = 'name,formatted_address,geometry,place_id,rating,formatted_phone_number,business_status,price_level,vicinity,types'
     url = 'https://maps.googleapis.com/maps/api/place/details/json?'
-    resp = Faraday.get(url, { place_id: google_place_id, fields: fields, key: ENV['GOOGLE_API_KEY'] }, { 'Accept' => 'application/json' })
+    resp = Faraday.get(url, { place_id: google_place_id, fields: fields, key: ENV['GOOGLE_API_SERVER_KEY'] }, { 'Accept' => 'application/json' })
     puts resp
     place = JSON.parse(resp.body)['result']
     @place = Place.find_or_initialize_by(google_place_id: place['place_id'])
@@ -57,7 +57,7 @@ class PlacesController < ApplicationController
 
   def search_google(keyword, location)
     url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?'
-    resp = Faraday.get(url, { query: keyword, location: location, rankby: "distance", key: ENV['GOOGLE_SERVER_API_KEY'] }, { 'Accept' => 'application/json' })
+    resp = Faraday.get(url, { query: keyword, location: location, rankby: "distance", key: ENV['GOOGLE_API_SERVER_KEY'] }, { 'Accept' => 'application/json' })
     results = JSON.parse(resp.body)['results']
     puts "results from google search"
     puts results
