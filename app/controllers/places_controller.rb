@@ -57,7 +57,7 @@ class PlacesController < ApplicationController
 
   def search_google(keyword, location)
     url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?'
-    resp = Faraday.get(url, { query: keyword, location: location, rankby: "distance", key: ENV['GOOGLE_API_KEY'] }, { 'Accept' => 'application/json' })
+    resp = Faraday.get(url, { query: keyword, location: location, rankby: "distance", key: ENV['GOOGLE_SERVER_API_KEY'] }, { 'Accept' => 'application/json' })
     results = JSON.parse(resp.body)['results']
     puts "results from google search"
     puts results
